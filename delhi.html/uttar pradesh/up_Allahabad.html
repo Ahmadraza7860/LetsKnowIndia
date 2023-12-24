@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 35rem;
+        }
+
+        h1 {
+
+            font-size: 5rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+           display: flex;
+           flex-flow: row wrap;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+            background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+      
+        body {
+            background-color: antiquewhite;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/main states pic/Abad.jpg" alt="">
+        <div class="DAUSA1">
+            <h1></h1>
+        </div>
+    </div>
+    <h3>Prayagraj</h3>
+    <h2></h2>
+    <P> Prayagraj is crowned in ancient scriptures as ‘Prayag’, ‘Prayagraj’ or ‘Teertharaj’ and is considered the 
+        holiest of pilgrimage centres of India.The Kumbh held in every six years and Mahakumbh in every 12 years at 
+        Prayagraj (Sangam) are the largest gatherings of pilgrims on this earth.
+        <br> <br> <br>
+
+        </P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/main states pic/Abad1.webp" alt="">
+            <div class="jaaneman"></div>
+            <h4>Chitrakoot</h4> <br> <br><br>
+            <h5>
+                Famed in Hindu mythology, Chitrakoot is celebrated in ballads and scriptures for its religious importance 
+                and close association with the epic Ramayan.It is believed to be the place where Lord Rama and Sita spent 
+                12 years of their exile and where the Sage Atri and Sati Anasuiya meditated.
+
+
+
+
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/main states pic/ayodhya4.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Kanak Bhavan</h4> <br> <br><br>
+            <h5>
+                The exquisitely embellished temple was constructed by Vrishbhanu Kuvari, Queen of Teekamgarh (Madhya Pradesh) 
+                in 1891 and is also known as Sone-ka- Mandir. The main temple surrounds an open inner area which houses the 
+                sacred shrine of Rampada. The beautiful idols of Goddess Sita along with Lord Ram and his three brothers are 
+                marvellous to look at. Theses idols are wearing gold crowns.
+
+
+
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/main states pic/ayodhya5.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Haniman Gadhi</h4> <br> <br><br>
+            <h5>
+                Due to the famous temple of Kedareshwar Shiva on the ghat, it was named Kedarghat. Kedareshwar Shiva 
+                is mentioned in the twelve Jyotirlingas of Kashi, whose reference is found in Matsyapuran, Agnipuran, 
+                Kashikhand and Brahmavaivarta Purana. There is Gaurikund on the steps of the Ghat. Lunar eclipse, Nir
+                -jala Ekadashi, Gangadashera, Makar and Aries Sankranti, Dalachhath attract big crowds of pilgrims.</h5>
+        </div>
+        
+        
+
+
+
+       
+
+
+    </div>

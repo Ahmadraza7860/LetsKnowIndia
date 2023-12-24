@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+
+            padding: 0%;
+            margin: 1px;
+        }
+
+        .form-inline {
+            position: absolute;
+            right: 2rem;
+
+        }
+
+        .dpimage {
+            height: 40rem;
+            width: 79rem;
+            box-shadow: 10px;
+            border-radius: 5px;
+
+        }
+
+        h2 {
+            background-color: antiquewhite;
+            margin: 15px;
+            font-weight: 700;
+
+            border-bottom: 5px solid rgb(15, 13, 13);
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        .span1 {
+            font-size: 4rem;
+            font-weight: 150px;
+
+        }
+
+        h6 {
+            background-color: rgba(240, 248, 255, 0.301);
+            transition: .5;
+            position: absolute;
+            margin-top: 19rem;
+            font-size: 25px;
+            font-weight: 700;
+            color: aliceblue;
+
+        }
+
+        .firstclass {
+            display: flex;
+        }
+
+        .textimage {
+            margin-right: 20px;
+            margin: 10px;
+            float: left;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 8px;
+            box-shadow: 10px;
+            border: 5px solid wheat;
+        }
+
+        .photogallery {
+            height: 15rem;
+            width: 10rem;
+
+        }
+
+        .galley {
+            display: flex;
+            align-items: center;
+            margin-left: 15rem;
+        }
+
+        h4 {
+            margin: 20px;
+            font-weight: 500;
+            color: burlywood;
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+        .boxxx{
+            margin: 5px;
+            padding: 5px;
+            border: 2px;
+            margin-top: 5rem;
+        }
+      .footing1{
+        margin-top: 12rem;
+      }
+      .subhashimage{
+
+        margin-right: 20px;
+            margin: 10px;
+            float: right;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 8px;
+            box-shadow: 10px;
+            border: 5px solid wheat;
+
+      }
+
+      .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        } .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        a {
+            color: black;
+        }
+
+        .box:hover {
+            transform: scale(1.015);
+           
+        }
+
+        body {}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div class="firstclass">
+        <img class="dpimage" src="/delhi.html/India gate/10.webp" alt="">
+        <h6><em><span class="span1">India Gate</span><br> The India Gate (formerly known as the All India War Memorial)
+                is a war memorial located near the Rajpath on the eastern edge of the "ceremonial axis" of New Delhi,
+                formerly called duty path </em></h6>
+    </div>
+
+    <div class="boxxx">
+        <h2>Qutb Minar</h2><br>
+        <h3>The India Gate (formerly known as the All India War Memorial) is a war memorial located near the Rajpath on
+            the eastern edge of the "ceremonial axis" of New Delhi, formerly called duty path. It stands as a memorial
+            to 84,000 soldiers of the British Indian Army who died between 1914 and 1921 in the First World War, in
+            France, Flanders, Mesopotamia, Persia, East Africa, Gallipoli and elsewhere in the Near and the Far East,
+            and the Third Anglo-Afghan War. 13,300 servicemen's names, including some soldiers and officers from the
+            United Kingdom, are inscribed on the gate.[2] Designed by Sir Edwin Lutyens, the gate evokes the
+            architectural style of the memorial arch such as the Arch of Constantine, in Rome, and is often compared to
+            the Arc de Triomphe in Paris, and the Gateway of India in Mumbai.
+
+            Following the Bangladesh Liberation war in 1972, a structure consisting of a black marble plinth with a
+            reversed rifle, capped by a war helmet and bounded by four eternal flames, was built beneath the archway.
+            This structure, called Amar Jawan Jyoti (Flame of the Immortal Soldier), has since 1971 served as India's
+            tomb of the unknown soldier. India Gate is counted amongst the largest war memorials in India and every
+            Republic Day, the Prime Minister visits the gate to pay their tributes to the Amar Jawan Jyoti, following
+            which the Republic Day parade starts. India Gate is often a location for civil society protests. </h3>
+    </div >
+    <div>
+        <h2>Photo gallery</h2>
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/1.webp" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/picture-clicked-at-the.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/3.webp" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/4.avif" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/5.webp" alt="">
+            </div>
+        </div>
+
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/6.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/7.webp" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/8.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/9.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/India gate/10.webp" alt="">
+            </div>
+
+        </div>
+        <div  class="boxxx">
+            <h2>Design and structure</h2>
+            <img class="textimage" src="/delhi.html/India gate/picture-clicked-at-the.jpg" alt="">
+            <h3>The memorial gate was designed by Sir Edwin Lutyens, who was not only the main architect of New Delhi
+                but also a member of the Imperial War Graves Commission and one of Europe's foremost designers of war
+                graves and memorials. He designed sixty-six war memorials in Europe, including the highly regarded
+                Cenotaph in London in 1919, the first national war memorial erected after World War I, for which he was
+                commissioned by David Lloyd George, the British prime minister.[11] The memorial in New Delhi, like the
+                Cenotaph in London, is a secular memorial, free of religious and "culturally-specific iconography such
+                as crosses". Lutyens according to his biographer, Christopher Hussey, relied on the "elemental mode", a
+                style of commemoration based on a "universal architectural style free of religious ornamentation".
+
+                The India Gate, which has been called a "creative reworking of the Arc de Triomphe" has a span of 30
+                feet (9.1 m) and lies on the eastern axial end of Kingsway, present-day Kartavya Path, the central vista
+                and main ceremonial procession route in New Delhi.[11] The 42-metre-tall (138 ft) India Gate stands on a
+                low base of red Bharatpur stone and rises in stages to a huge moulding. The shallow domed bowl at the
+                top was intended to be filled with burning oil on anniversaries, but this is rarely done.[citation
+                needed] The memorial-gate hexagon complex, with a diameter of about 625 metres (2,051 ft), covers
+                approximately 306,000 m2 (3,290,000 sq ft) in area
+
+
+                <H4>Inscriptions</H4>
+                <h3>
+                    The cornice of the India Gate is inscribed with Imperial suns while both sides of the arch have
+                    INDIA, flanked by the dates MCMXIV ('1914'; on the left) and MCMXIX ('1919'; on the right). Below
+                    the word INDIA, in capital letters, is inscribed:
+
+
+                    Inscription at top of the gate
+                    To the dead of the Indian Armies who fell and are honored in France and Flanders, Mesopotamia and
+                    Persia, East Africa, Gallipoli and elsewhere in the Near and Far East and in Sacred Memory also of
+                    those whose names are here recorded and who fell in India on the North West Frontier and during the
+                    Third Afghan War.
+
+                    13,313 names are engraved out of which 12,357 are Indian.[1][2] Access to read the names on the
+                    memorial is restricted, though they can be seen on the Commonwealth War Graves Commission (CWGC)
+                    website, which lists the names with their respective date of death, unit name, regiment, place on
+                    gate where name is inscribed, location, and other information).[12] </h3>
+            </h3>
+        </div>
+
+        <div class="boxxx">
+            <h2>Subhas Chandra Bose statue</h2>
+            <img class="subhashimage" src="/delhi.html/India gate/6.jpg" alt="">
+            <h3>On 21 January 2022, Prime Minister Narendra Modi announced that a statue of Subhas Chandra Bose would be
+                installed in the canopy at India Gate. The announcement came two days before the 125th anniversary of
+                his birth. A 28 feet high and 6 feet wide 3D holographic statue of Bose was inaugurated at the site on
+                23 January 2022, celebrated as Parakram Diwas (Courage Day).[23][24] On this occasion, an award in the
+                name of Bose was instituted for the exemplary work in disaster management. On 8 September 2022, Prime
+                Minister Narendra Modi inaugurated the newly-made statue of Netaji Subhas Chandra Bose near the India
+                Gate..</h3>
+           
+
+            </h3>
+        </div>
+
+
+        <div class="boxxx">
+            <h2>Statue of King-Emperor George V</h2>
+            <img class="textimage" src="/delhi.html/India gate/6.jpg" alt="">
+            <h3>
+                In the autumn of 1930, Jagatjit Singh, the Maharaja of Kapurthala State, organized an appeal amongst the
+                Indian princely rulers to erect a statue of King-Emperor George V in New Delhi to commemorate the
+                sovereign's recent recovery from sepsis.[15] As originally conceived, the statue would have depicted the
+                monarch in marble riding in a howdah atop a red stone elephant; a canopy was not then included in the
+                design.[16] The final concept, approved by George V before his death, dispensed with the elephant,
+                instead incorporating a red stone canopy and pedestal, with the pedestal standing 34.5 feet (10.52 m)
+                tall.[17] An 18.75 feet (5.72 m) tall marble statue of the King-Emperor wearing his Delhi Durbar
+                coronation robes and Imperial State Crown, bearing the British globus cruciger and sceptre, was placed
+                atop the pedestal, which bore the Royal Coat of Arms and the inscription GEORGE V R I, the "R I"
+                designating him as 'Rex Imperator' or 'King Emperor'.[17][18] The combined height of the statue and
+                pedestal was 53.25 feet (16.23 m); while the pedestal and canopy were designed by Lutyens, the statue
+                was designed by Charles Sargeant Jagger of the Royal Academy of Arts. The canopy was topped by a gilded
+                Tudor Crown and bore the Royal Cyphers of George V,[19] with the completed monument intended to "mark
+                the loyalty and attachment of the Ruling Princes and Chiefs of India to the Person and Throne of the
+                King-Emperor."[17] Following the premature death of Jagger, the statue's head and crown were completed
+                by one of his assistants in England and then shipped to India, while the remainder of the monument was
+                carved in India.[20]
+
+                The statue's installation in the autumn of 1936,[20] amidst the Indian independence movement, made it a
+                target for Independence activists; on the night of 3 January 1943, during the Quit India movement,
+                Hemwati Nandan Bahuguna and Manubhai Shah scaled the statue, smashed its nose and draped it with a large
+                black cloth inscribed "Death to the Tyrant."[21] The statue remained standing at its original site for
+                two decades following the nation's independence in 1947, but certain political factions increasingly
+                objected to its continued presence in its central location, particularly after the tenth anniversary of
+                Independence and the centennial of the Indian Rebellion of 1857.[18] On the night of 12–13 August 1958,
+                the royal insignia of George V and the Tudor Crown atop the canopy were removed.[19]
+
+                With increasing pressure from Socialist members of Parliament, then-Deputy Minister Home Affairs Lalit
+                Narayan Mishra stated in May 1964 that all British statuary would be removed from the national capital
+                by 1966.[18] Two days before Independence Day in 1965, members of the Samyukta Socialist Party
+                overpowered two constables guarding the site, covered the statue in tar and defaced its imperial crown,
+                nose and one ear, also leaving a photo of Subhas Chandra Bose at the monument.[18] Despite the resulting
+                adverse publicity and the growing controversy over the situation, the matter of relocating the statue
+                dragged on for several years.[18] The British government rejected a proposal to repatriate the monument
+                to the United Kingdom, citing the lack of an appropriate site and sufficient funds, while the British
+                High Commission in New Delhi declined to have the statue relocated to their compound, due to limited
+                space.[18] Efforts to move the statue to a Delhi park were strongly opposed by the nationalist Bharatiya
+                Jana Sangh, which then held power in the city.[18] Finally, in late 1968, the statue was removed from
+                its position beneath the canopy and briefly placed in storage before being moved to Delhi's Coronation
+                Park, where it joined other British Raj-era statues.[18] During and after the statue's removal, it was
+                often suggested that a statue of Mahatma Gandhi be placed under the canopy.[18] The suggestion was even
+                discussed in the Indian Parliament.[citation needed] In 1981, the government had in response to a
+                question in the Parliament, confirmed that it was considering the installation of a Gandhi statue under
+                the empty canopy, but nothing came of it </h3>
+            </div>
+
+
+        <div class="boxxx" >
+            
+            <h2>Amar Jawan Jyoti</h2>
+            <img class="textimage" src="/delhi.html/India gate/8.jpg" alt="">
+            <h3>Amar Jawan Jyoti, or the flame of the immortal soldier, is a structure consisting of black marble
+                plinth, with reversed rifle, capped by war helmet, bound by four urns, each with the permanent light
+                (jyoti) from compressed natural gas flames,[25] erected under the India gate to commemorate Indian
+                soldiers martyred in the war of the liberation of Bangladesh in December 1971. It was inaugurated by the
+                then Prime Minister Indira Gandhi on 26 January 1972, the twenty-third Indian Republic Day.[citation
+                needed]
+
+                Since the installation of the Amar Jawan Jyoti, it has served as India's tomb of the unknown
+                soldier.[citation needed] It is staffed around the clock by the Indian armed forces.[citation needed]
+                Wreaths are placed at the Amar Jawan Jyoti every Republic Day, Vijay Diwas, and Infantry Day[a] by the
+                Prime Minister and the Chiefs of the Armed Forces.[26]
+
+                On 21 January 2022 the Amar Jawan Jyoti at India Gate was merged with the Amar Jawan Jyoti at the
+                National War Memorial.</h3>
+        </div>
+
+
+        <div class="boxxx">
+            <h2>National War Memorial</h2>
+            <img class="subhashimage" src="/delhi.html/NATIONAL WAR MEMORIAL.jpg" alt="">
+            <h3>In July 2014, the government announced plans to construct a National War Memorial in the C-Hexagon
+                (India Gate Circle), and an adjoining National War Museum. The cabinet allocated ₹500 crore (US$63
+                million) for the project.[28] The National War Memorial was completed in January, 2019.[29][30] Since
+                January 2022, it houses the Amar Jawan Jyoti, or the "Flame of the Immortal Soldier".[27]
+
+                Gallery.
+            </h3>
+        </div>
+
+
+       
+
+        <div>
+
+        </div>
+
+</body>
+<div class="footing1">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-black text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India </a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+    </footer>
+    <!-- Footer -->
+</div>
+
+</html>

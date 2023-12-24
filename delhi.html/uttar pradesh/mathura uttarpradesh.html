@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 30rem;
+        }
+
+        h1 {
+
+            font-size: 4rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: ;
+            margin-right: ;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+                     background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+        .maincontainer:nth-child(odd) {
+            background-color: rgb(222, 222, 21);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/main states pic/heroo1.jpg" alt="">
+        <div class="DAUSA1">
+            <h1></h1>
+        </div>
+    </div>
+    <h3>Mathura</h3>
+    <h2>Lord Krishna</h2>
+    <P> Mathura is the abode of Lord Krishna and it has a great religious sanctity among the Hindus. 
+        It also has one of the oldest historical records. Even Mathura is mentioned in the epic Ramayan. 
+        It is on record that Mathura was one of the capitals of Kushan King Kanishka(130AD).
+    </P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/main states pic/heroo5.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Prem Mandir</h4> <br> <br><br>
+            <h5>
+                
+                The temple was established by the fifth Original Jagadguru Shri Kripalu Ji Maharaj. Different 
+                Leelas of Shri Krishna and Rasik saints are depicted all over the wall of the main temple. 
+                Construction began in January 2001 and the inauguration ceremony took place from 15 to 17 
+                February 2012
+
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/main states pic/heroo4.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Govind Dev Temple</h4> <br> <br><br>
+            <h5>
+                Govind Dev Temple is one of the most sought after holy places in Vrindavan on account of its 
+                unique architecture. It was constructed in 1590 by King Man Singh of Amer, at a cost of ten 
+                million rupees. During the reign of Aurangzeb, it was plundered in 1670 and now only a three 
+                storied structure remains.The architecture of the temple is different from those of conventional 
+                temples. It is on a raised plinth and one has to climb a flight of stairs to reach the main hall.
+                It was once a magnificent seven storeyed structure built in the form of a Greek cross. The temple 
+                has an impressive altar of marble and silver.
+
+
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/main states pic/heroo2.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Barsana</h4> <br> <br><br>
+            <h5>
+                India Holi, the festival of vibrant colors, of showers of joy and happiness all around. It symbolizes the 
+                advent of Spring season in India and what more, it is the favorite festival of Lord Krishna. So what better 
+                place to get a glimpse of this wondrous festival than the land of Shri Krishna? Mathura is one place in India 
+                where Holi is celebrated with great zeal, fun and frolic.It is certainly the ideal place to be in during this 
+                season! With colors and naughtiness in the air, lingering smell of sweets and happy colorful faces greeting each 
+                other, everyone wishes to be a part of this amazing extravaganza! It is a month long fiesta beginning in February 
+                and ending with the grand Mathura Holi celebrations in March. It covers the whole Brij Bhoomi, from Gokul, Vrindavan, 
+                Barsana, Nandgaon to Mathura. Month long events at these places leave you mesmerized! And why not! Every Year Interna
+                -tional TV teams, Celebrated Dignitaries, Photographers & Tourists from all continents throng to Mathura to see this 
+                spectacle!
+
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/main states pic/heroo6.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Nandgaon</h4> <br> <br><br>
+            <h5>
+                Nandgaon is situated at the foot of a hill 51 km north-east of Mathura. It is believed that Krishna spent his childhood here
+                and few traces of his childhood are found here.
+            </h5>
+        </div>
+        
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/main states pic/heroo7.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Vrindavan</h4> <br> <br><br>
+            <h5>
+                Vrindavan, 15 km from Mathura, is another major place of pilgrimage. It is noted for its numerous temples - both old and modern. 
+                The name Vrindavan evokes the playfulness and lovable characteristics of Shri Krishna. This is the wood where he frolicked with 
+                the gopis and tenderly wooed Radha.
+
+            </h5>
+
+            
+            <p class="breaker"></p>
+            <div class="jaanu"><img class="image1" src="/main states pic/heroo8.jpg" alt="">
+                <div class="jaaneman"></div>
+                <h4>Banke Bihari Temple</h4> <br> <br><br>
+                <h5>
+                    Banke Bihari Temple is the most popular temple in Vrindavan. ‘Banke’ means bent at three angles, referring to the image of Krishna 
+                    playing the flute: where his right knee is bent across the left knee, right hand is bent to hold the flute, and the head is titled 
+                    slightly. It was built in 1860 and is a classic example of Rajasthani architecture. The facade of arches and pillars gives the 
+                    three-storey temple a distinctive look.The image of Banke Bihari was discovered in Nidhi Vana by Swami Haridas Ji, the great Krishna 
+                    devotee, belonging to the Nimbarka sect. It was rebuilt in 1921 by the disciples of Swami Haridas ji.
+
+                    
+    
+                </h5>
+
+
+
+                <p class="breaker"></p>
+            <div class="jaanu"><img class="image1" src="/main states pic/heroo3.jpg" alt="">
+                <div class="jaaneman"></div>
+                <h4>krishna Janmstal temple</h4> <br> <br><br>
+                <h5>
+                    The most famous of Mathura’s temples is the Krishna Janmasthan Temple, built around the prison cell where Krishna was born after his 
+                    parents were imprisoned by his evil uncle, Kansa, king of Mathura. One of the most venerated shrines in India, the temple complex is 
+                    located west of Mathura’s old city and thronged by pilgrims throughtout the year, whose number increases exponentially during festivals.
+
+
+
+                    
+    
+                </h5>
+
+    
+        </div>
+        
+        </div>
+       
+    </div>
+
+</body>
+
+</html>

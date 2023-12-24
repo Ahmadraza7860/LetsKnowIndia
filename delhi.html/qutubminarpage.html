@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+
+            padding: 0%;
+            margin: 1px;
+        }
+
+        .form-inline {
+            position: absolute;
+            right: 2rem;
+
+        }
+
+        .dpimage {
+            height: 40rem;
+            width: 79rem;
+            box-shadow: 10px;
+            border-radius: 5px;
+
+        }
+
+        h2 {
+            background-color: antiquewhite;
+            margin: 15px;
+            font-weight: 700;
+
+            border-bottom: 5px solid rgb(15, 13, 13);
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        .span1 {
+            font-size: 4rem;
+            font-weight: 150px;
+
+        }
+
+        h6 {
+            background-color: rgba(240, 248, 255, 0.301);
+            transition: .5;
+            position: absolute;
+            margin-top: 19rem;
+            font-size: 25px;
+            font-weight: 700;
+            color: aliceblue;
+
+        }
+
+        .firstclass {
+            display: flex;
+        }
+
+        .textimage {
+            margin-right: 20px;
+            margin: 10px;
+            float: left;
+            height: 15rem;
+            width: 10rem;
+        }
+
+        .photogallery {
+            height: 15rem;
+            width: 10rem;
+
+        }
+
+        .galley {
+            display: flex;
+            align-items: center;
+            margin-left: 15rem;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        } .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        a {
+            color: black;
+        }
+
+        .box:hover {
+            transform: scale(1.015);
+           
+        }
+
+        body {}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div class="firstclass">
+        <img class="dpimage" src="/delhi.html/qutubminar/Qutub_Minar_in_the_monsoons_20170908115259.jpg" alt="">
+        <h6><em><span class="span1">Qutub Minar</span><br> This victory tower is a symbol of the synthesis of
+                traditional Islamic
+                architecture
+                and Southwestern Asian design. </em></h6>
+    </div>
+
+    <div>
+        <h2>Qutb Minar</h2><br>
+        <h3>The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and "victory tower" that forms part
+            of the Qutb complex, which lies at the site of Delhi’s oldest fortified city, Lal Kot, founded by the Tomar
+            Rajputs.[3] It is a UNESCO World Heritage Site in the Mehrauli area of South Delhi, India.[4][5] It is one
+            of the most visited tourist spots in the city, mostly built between 1199 and 1220.[6][7][4]
+
+            It can be compared to the 62-metre all-brick Minaret of Jam in Afghanistan, of c. 1190, which was
+            constructed a decade or so before the probable start of the Delhi tower.[8] The surfaces of both are
+            elaborately decorated with inscriptions and geometric patterns. The Qutb Minar has a shaft that is fluted
+            with "superb stalactite bracketing under the balconies" at the top of each stage.[9][10][11] In general,
+            minarets were slow to be used in India and are often detached from the main mosque where they exist.[12]
+        </h3>
+    </div>
+    <div>
+        <h2>Photo gallery</h2>
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/1.cms"
+                    alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/2.jpg"
+                    alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/3.webp"
+                    alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/4.jpg"
+                    alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/5.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/6.jpg"
+                    alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/7.jpg"
+                    alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/8.jpg"
+                    alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/2.jpg"
+                    alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/qutubminar/2.jpg"
+                    alt="">
+            </div>
+
+        </div>
+        <div>
+            <h2>A Synthesis of South Asian and Islamic Architecture</h2>
+            <img class="textimage" src="/delhi.html/qutubminar/22qutub.jpg" alt="">
+            <h3>This victory tower is a symbol of the synthesis of traditional Islamic architecture and Southwestern
+                Asian
+                design. Elizabeth Lambourn’s Islam Beyond Empires: Mosques and Islamic Landscapes in India and the
+                Indian
+                Ocean studies the introduction of Islam in South Asia and how the region influenced the Islamic
+                religious
+                architecture.[13] These newly arrived Muslims from the Islamic West escaped the Mongol Empire and
+                emigrated
+                to India, where they constructed religious centers. The Qutb Minar serves as a central marker to these
+                new
+                Muslim communities as well as being a reminder of Islam's presence in the area.[13] The architecture of
+                the
+                minaret varies greatly from that of the typical style and design of the mosques constructed in the
+                Middle
+                East. The style of these structures is heavily influenced by the local architecture such as the Indic
+                temples. This affected the different materials, techniques, and decoration that were used in the
+                construction of the Qutb Minar.[13]
+
+                The minaret is unique in that historically, these tower minarets were uncommon in South Asian-Islamic
+                design
+                until the 17th century. This lag is due to the slow adoption of the typical Middle Eastern style in
+                India.[13] It is also detached from the main mosque, showcasing how the native culture affected the
+                design
+                of a Middle Eastern structure.[12] The Qutb Minar is seen as the "earliest and best example of a fusion
+                or
+                synthesis of Hindu-Muslim traditions" according to Ved Parkash in his essay The Qutb Minar from
+                Contemporary
+                and Near Contemporary Sources.[13] Like many mosques built in South Asia during this time period, the
+                minaret was constructed by Hindu laborers and craftsmen but overseen by Muslim architects.[13] This led
+                to a
+                construction that synthesized both Hindu and Islamic religious architecture. Since the craftsmen were
+                Hindu
+                and unfamiliar with the Quran, the inscriptions are a compilation of disarranged Quranic texts and other
+                Arabic expressions.[13]</h3>
+        </div>
+
+        <div>
+            <h2>History</h2>
+            <img class="textimage" src="/delhi.html/qutubminar/22qutub.jpg" alt="">
+            <h3>The Qutb Minar was built over the ruins of the Lal Kot, the citadel of Dhillika.[7] Qutub Minar was
+                begun
+                after the Quwwat-ul-Islam Mosque, which was started around 1192 by Qutb-ud-din Aibak, first ruler of the
+                Delhi Sultanate.[14]
+
+
+                Kuttull Minor, Delhi. The Qutb Minar, 1805.
+                It is usually thought that the tower is named for Qutb-ud-din Aibak, who began it. It is also possible
+                that
+                it is named after Khwaja Qutbuddin Bakhtiar Kaki a 13th-century sufi saint, because Shamsuddin Iltutmish
+                was
+                a devotee of his.[15]
+
+                The Minar is surrounded by several historically significant monuments of the Qutb complex.
+                Quwwat-ul-Islam
+                Mosque, to the north-east of the Minar was built by Qutub-ud-Din Aibak in A.D. 1198. It is the earliest
+                extant - mosque built by the Delhi Sultans. It consists of a rectangular courtyard enclosed by
+                cloisters,
+                erected with the carved columns and architectural members of 27 Jain and Hindu temples, which were
+                demolished by Qutub-ud-Din Aibak as recorded in his inscription on the main eastern entrance.[16] Later,
+                a
+                lofty arched screen was erected, and the mosque was enlarged, by Shams-ud- Din Itutmish (A.D. 1210-35)
+                and
+                Ala-ud-Din Khalji. The Iron Pillar in the courtyard bears an inscription in Sanskrit in Brahmi script of
+                fourth century A.D., according to which the pillar was set up as a Vishnudhvaja (standard of god Vishnu)
+                on
+                the hill known as Vishnupada in memory of a mighty king named Chandra.[16]
+
+                The mosque complex is one of the earliest that survives in the Indian subcontinent.[6][7]
+
+                The nearby pillared cupola known as "Smith's Folly" is a remnant of the tower's 19th century
+                restoration,
+                which included an ill-advised attempt to add some more stories.[17][18]
+
+                In 1505, an earthquake damaged Qutub Minar; it was repaired by Sikander Lodi. On 1 September 1803, a
+                major
+                earthquake caused serious damage. Major Robert Smith of the British Indian Army renovated the tower in
+                1828
+                and installed a pillared cupola over the fifth story, creating a sixth. The cupola was taken down in
+                1848,
+                under instructions from The Viscount Hardinge, who was the Governor General of India. at the time. It
+                was
+                reinstalled at ground level to the east of Qutb Minar, where it remains. This is known as "Smith's
+                Folly".[19]
+
+                It was added to the list of World Heritage Site by UNESCO in 1993.</h3>
+        </div>
+
+        <div>
+            <h2>The Ghurids</h2>
+            <img class="textimage" src="/delhi.html/qutubminar/ghurids.jpg" alt="">
+            <h3>The construction of the Qutb Minar was planned and financed by the Ghurids, who emigrated to India and
+                brought Islam with them. The Ghurids, historically known as the Shansabanis, were a clan of Tajik origin
+                that hailed from Ghur, the mountainous region of modern-day western Afghanistan.[20] In the late
+                eleventh
+                century to the early twelfth century, the different sects of this nomadic clan united, losing its
+                nomadic
+                culture. During this time, they also converted to Islam.[20]
+
+                They then expanded into modern-day India and quickly took control of a substantial part of the
+                country.[20]
+                The Ghurids annexed the Multan and Uch in the western Punjab in 1175-76, the northwestern regions around
+                Peshawar in 1177, and the region of Sindh in 1185-86. In 1193, Qutb al-Din Aibek conquered Delhi and
+                implemented a Ghurid governorship in the province, and the congregational mosque, the Qutb Minar
+                complex,
+                was founded in 1193.[20] In the past, scholars believed that the complex was constructed to promote a
+                conversion to Islam amongst the Ghurids' new subjects as well as a symbol of the Ghurids' adherence to a
+                socio-religious system.[20] There is now new information to suggest that conversion to Islam was not a
+                top
+                priority of the new annexes and instead the Ghurid governors sought to make a synthesis of the local
+                culture
+                and Islam through negotiation.[20]</h3>
+        </div>
+
+        <div>
+
+        </div>
+
+</body>
+<div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India </a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+    </footer>
+    <!-- Footer -->
+</div>
+
+</html>

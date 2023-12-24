@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+
+            padding: 0%;
+            margin: 1px;
+        }
+
+        .form-inline {
+            position: absolute;
+            right: 2rem;
+
+        }
+
+        .dpimage {
+            height: 40rem;
+            width: 79rem;
+            box-shadow: 10px;
+            border-radius: 5px;
+
+        }
+
+        h2 {
+            background-color: antiquewhite;
+            margin: 15px;
+            font-weight: 700;
+
+            border-bottom: 5px solid rgb(15, 13, 13);
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        .span1 {
+            font-size: 4rem;
+            font-weight: 150px;
+
+        }
+
+        h6 {
+            background-color: rgba(240, 248, 255, 0.301);
+            transition: .5;
+            position: absolute;
+            margin-top: 19rem;
+            font-size: 25px;
+            font-weight: 700;
+            color: aliceblue;
+
+        }
+
+        .firstclass {
+            display: flex;
+        }
+
+        .textimage {
+            margin-right: 20px;
+            margin: 10px;
+            float: left;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 8px;
+            box-shadow: 10px;
+            border: 5px solid wheat;
+        }
+
+        .photogallery {
+            height: 15rem;
+            width: 10rem;
+
+        }
+
+        .galley {
+            display: flex;
+            align-items: center;
+            margin-left: 15rem;
+        }
+
+        h4 {
+            margin: 20px;
+            font-weight: 500;
+            color: burlywood;
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        .boxxx {
+            margin: 5px;
+            padding: 5px;
+            border: 2px;
+            margin-top: 5rem;
+        }
+
+        .footing1 {
+            margin-top: 12rem;
+        }
+
+        .subhashimage {
+
+            margin-right: 20px;
+            margin: 10px;
+            float: right;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 8px;
+            box-shadow: 10px;
+            border: 5px solid wheat;
+
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        } .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        a {
+            color: black;
+        }
+
+        .box:hover {
+            transform: scale(1.015);
+           
+        }
+
+
+        body {}
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="firstclass">
+        <img class="dpimage" src="/delhi.html/humayuns tomb/1.jpg" alt="">
+        <h6><em><span class="span1">Humayun's Tomb</span><br> Humayun's tomb (Persian: Maqbara-i Humayun) is the tomb of
+                the Mughal Emperor Humayun in Delhi, India. </em></h6>
+    </div>
+
+    <div class="boxxx">
+        <h2>Humayun's Tomb</h2><br>
+        <h3>Humayun's tomb (Persian: Maqbara-i Humayun) is the tomb of the Mughal Emperor Humayun in Delhi, India.[1]
+            The tomb was commissioned by Humayun's first wife and chief consort, Empress Bega Begum under her
+            patronage[2][3][4][5][6] in 1558, and designed by Mirak Mirza Ghiyas and his son, Sayyid Muhammad,[7]
+            Persian architects chosen by her.[8][9] It was the first garden-tomb on the Indian subcontinent,[10] and is
+            located in Nizamuddin East, Delhi, India, close to the Dina-panah Citadel, also known as Purana Qila (Old
+            Fort), that Humayun found in 1538. It was also the first structure to use red sandstone at such a
+            scale.[11][12] The tomb was declared a UNESCO World Heritage Site in 1993,[10] and since then has undergone
+            extensive restoration work, which is complete.[13] Besides the main tomb enclosure of Humayun, several
+            smaller monuments dot the pathway leading up to it, from the main entrance in the West, including one that
+            even pre-dates the main tomb itself, by twenty years; it is the tomb complex of Isa Khan Niyazi, an Afghan
+            noble in Sher Shah Suri's court of the Suri dynasty, who fought against the Mughals, constructed in 1547 CE. <br> <br>
+
+            The complex encompasses the main tomb of the Emperor Humayun, which houses the graves of Empress Bega Begum,
+            Hamida Begum, and also Dara Shikoh, great-great-grandson of Humayun and son of the later Emperor Shah Jahan,
+            as well as numerous other subsequent Mughals, including Emperor Jahandar Shah, Farrukhsiyar, Rafi Ul-Darjat,
+            Rafi Ud-Daulat, Muhammad Kam Bakhsh and Alamgir II.[14][15] It represented a leap in Mughal architecture,
+            and together with its accomplished Charbagh garden, typical of Persian gardens, but never seen before in
+            India, it set a precedent for subsequent Mughal architecture. It is seen as a clear departure from the
+            fairly modest mausoleum of his father, the first Mughal Emperor, Babur, called Bagh-e Babur (Gardens of
+            Babur) in Kabul (Afghanistan). Though the latter was the first Emperor to start the tradition of being
+            buried in a paradise garden.[16][17] Modelled on Gur-e Amir, the tomb of his ancestor and Asia's conqueror
+            Timur in Samarkand, it created a precedent for future Mughal architecture of royal mausolea, which reached
+            its zenith with the Taj Mahal, at Agra. <br> <br>
+
+            The site was chosen on the banks of Yamuna river, due to its proximity to Nizamuddin Dargah, the mausoleum
+            of the celebrated Sufi saint of Delhi, Nizamuddin Auliya, who was much revered by the rulers of Delhi, and
+            whose residence, Chilla Nizamuddin Auliya lies just north-east of the tomb. In later Mughal history, the
+            last Mughal Emperor, Bahadur Shah Zafar took refuge here, during the Indian Rebellion of 1857, along with
+            three princes, and was captured by Captain Hodson before being exiled to Rangoon.[9][21] At the time of the
+            Slave Dynasty this land was under the 'KiloKheri Fort' which was capital of Sultan Qaiqabad, son of
+            Nasiruddin (1268–1287).  <br> <br>
+
+            The Tombs of Battashewala Complex lie in the buffer zone of the World Heritage Site of the Humayun Tomb
+            Complex; the two complexes are separated by a small road but enclosed within their own separate compound
+            wall </h3>
+    </div>
+    <div>
+        <h2>Photo gallery</h2>
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/2.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/3.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/4.webp" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/5.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/8.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/6.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/7.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/8.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/10.webp" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/humayuns tomb/4.webp" alt="">
+            </div>
+
+        </div>
+        <div class="boxxx">
+            <h2>History</h2>
+            <img class="textimage" src="/delhi.html/humayuns tomb/3.jpg" alt="">
+            <h3>After his death on 27 January 1556, Humayun's body was first buried in his palace in Purana Quila at
+                Delhi. Thereafter it was taken to Sirhind, in Punjab by Khanjar Beg and, in 1558, it was seen by
+                Humayun's son, the then Mughal Emperor, Akbar. Akbar subsequently visited the tomb in 1571, when it was
+                about to be completed. <br> <br> <br>
+
+                The tomb of Humayun was built by the orders of his first wife and chief consort, Empress Bega Begum
+                (also known as Haji Begum). Construction began in 1565 and was completed in 1572; it cost 1.5 million
+                rupees,[9] paid entirely by the Empress.[26] Bega Begum had been so grieved over her husband's death
+                that she had thenceforth dedicated her life to a sole purpose: the construction of a memorial to him
+                than would be the most magnificent mausoleum in the Empire, at a site near the Yamuna River in
+                Delhi.[27] According to Ain-i-Akbari, a 16th-century detailed document written during the reign of
+                Akbar, Bega Begum supervised the construction of the tomb after returning from Mecca and undertaking the
+                Hajj pilgrimage. <br> <br> <br>
+
+                According to Abd al-Qadir Bada'uni, one of the few contemporary historians to mention construction of
+                the tomb, it was designed by the Persian architect Mirak Mirza Ghiyas (also referred to as Mirak
+                Ghiyathuddin), who was selected by the Empress and brought from Herat (northwest Afghanistan); he had
+                previously designed several buildings in Herat, Bukhara (now Uzbekistan), and others elsewhere in
+                India.[8] Ghiyas died before the structure was completed and it was completed by his son, Sayyed
+                Muhammad ibn Mirak Ghiyathuddin. <br> <br> <br>
+
+                An English merchant, William Finch, who visited the tomb in 1611, describes rich interior furnishing of
+                the central chamber (in comparison to the sparse look today). He mentions the presence of rich carpets,
+                as well as a shamiana, a small tent above the cenotaph, which was covered with a pure white sheet, and
+                with copies of the Quran in front along with Humayun's sword, turban and shoes. <br> <br> <br>
+
+                The fortunes of the once famous Charbagh (Four-gardens) made of four squares separated by four
+                promenades, radiating from a central reflection pool. It spread over 13 hectares surrounding the
+                monument, changed repeatedly over the years after its construction. The capital had already shifted to
+                Agra in 1556, and the decline of the Mughals accelerated the decay of the monument and its features, as
+                the expensive upkeep of the garden proved impossible. By the early 18th century, the once lush gardens
+                were replaced by vegetable garden of people who had settled within the walled area. However, the capture
+                of the last Mughal emperor, Bahadur Shah Zafar during the Indian Rebellion of 1857 together with the
+                premises, and his subsequent sentencing to exile, along with execution of his three sons, meant that the
+                monument's worst days lay ahead, as the British took over Delhi completely. In 1860, the Mughal design
+                of the garden was replanted to a more English garden-style, with circular beds replacing the fours
+                central water pools on the axial pathways and trees profusely planted in flowerbeds. This fault was
+                corrected in the early 20th century, when on Viceroy Lord Curzon's orders the original gardens were
+                restored in a major restoration project between 1903 and 1909, which also included lining the plaster
+                channels with sandstone; a 1915 planting scheme added emphasis to the central and diagonal axis by
+                lining it with trees, though some trees were also planted on the platform originally reserved for
+                tents. <br> <br> <br>
+
+                In 1882, the official curator of ancient monuments in India published his first report, which mentioned
+                that the main garden was let out to various cultivators; amongst them till late were the royal
+                descendants, who grew cabbage and tobacco in it. <br> <br> <br>
+
+                In Ronaldshay's biography of Lord Curzon a letter is quoted from Lord Curzon to his wife in April 1905:
+                "You remember Humayun's tomb? I had the garden restored, the water channels dug out and refilled and the
+                whole place restored to its pristine beauty. I went to England last summer and, the eye of the master
+                being away, the whole place has been allowed to revert. The garden has been let to a native and is now
+                planted with turnips and the work of four years is thrown away! I shall drive out there, and woe betide
+                the deputy commissioner whose apathy has been responsible." <br> <br> <br>
+
+                During the Partition of India, in August 1947 the Purana Qila together with Humayun's Tomb, became major
+                refugee camps for Muslims migrating to the newly founded Pakistan, and was later managed by the
+                government of India. These camps stayed open for about five years, and caused considerable damage not
+                only to the extensive gardens, but also to the water channels and the principal structures. The camps
+                were raided many times by jathas which caused vandalism to occur during the early partition days in
+                1947. Eventually, to avoid vandalism, the cenotaphs within the mausoleum were encased in brick. In the
+                coming years, the Archaeological Survey of India (ASI) took on responsibility for the preservation of
+                heritage monuments in India, and gradually the building and its gardens were restored. Until 1985, four
+                unsuccessful attempts were made to reinstate the original water features. <br> <br> <br>
+
+                An important phase in the restoration of the complex began around 1993, when the monument was declared a
+                World Heritage Site. This brought new interest to its restoration, and a detailed research and
+                excavation process began under the aegis of the Aga Khan Trust and the ASI. This culminated in 2003,
+                when much of the complex and gardens were restored, with the historic fountains running once again after
+                several centuries of disuse. The restoration has been a continuous process ever since, with subsequent
+                phases addressing various aspects and monuments of the complex. <br> <br> <br>
+
+
+               
+            </h3>
+        </div>
+
+        <div class="boxxx">
+            <h2>Architecture</h2>
+            <img class="subhashimage" src="/delhi.html/humayuns tomb/architecture.webp" alt="">
+            <h3>Turkic and Mughal rule in the Indian subcontinent also introduced Central Asian and Persian styles of
+                Islamic architecture in the region, and by the late 12th century early monuments in this style were
+                appearing in and around Delhi, the capital of Delhi Sultanate. Starting with the Turkic Slave dynasty
+                which built the Qutb Minar (1192) and its adjacent Quwwat-ul-Islam mosque (1193 CE). North India was
+                successively ruled by foreign dynasties in the coming centuries, giving rise to the Indo-Islamic
+                architecture. While the prevailing style of architecture was trabeate, employing pillars, beams and
+                lintels, this brought in the arcuate style of construction, with its arches and beams, which flourished
+                under Mughal patronage and by incorporating elements of Indian architecture, especially Rajasthani
+                architecture including decorative corbel brackets, balconies, pendentive decorations and indeed kiosks
+                or chhatris, to develop a distinct Mughal architecture style, which was to become a lasting legacy of
+                the Mughal rule.[31] The combination of red sandstone and white marble was previously seen in Delhi
+                Sultanate period tombs and mosques, most distinctively in the highly decorative Alai Darwaza gatehouse
+                in the Qutub complex, Mehrauli, built in 1311, under the Khalji dynasty. <br> <br> <br>
+
+
+                Humayun's Tomb Garden Enclosure Plan
+                The high rubble built enclosure is entered through two lofty double-storeyed gateways on the west and
+                south, 16 metres high with rooms on either side of the passage and small courtyards on the upper floors.
+                The tomb, built of rubble masonry and red sandstone, uses white marble as a cladding material and also
+                for the flooring, lattice screens (jaalis), door frames, eaves (chhajja), and the main dome. It stands
+                on a vaulted terrace eight metres high and spread over 12,000m2. It is essentially square in design,
+                though chamfered on the edges to appear octagonal, to prepare ground for the design of the interior
+                structure. The plinth made with rubble core has fifty-six cells all around and houses over 100
+                gravestones. The entire base structure is on a raised platform, a few steps high. <br> <br> <br>
+
+                Inspired by Persian architecture; the tomb reaches a height of 47 metres (154 ft) and the plinth is 91
+                metres (299 ft) wide, and was the first Indian building to use the Persian double dome on a high neck
+                drum, and measures 42.5 metres (139 ft), and is topped by 6 metres (20 ft) high brass finial ending in a
+                crescent, common in Timurid tombs. The double or 'double-layered' dome, has an outer layer that supports
+                the white marble exterior, while the inner part gives shape to the cavernous interior volume. In a
+                contrast to the pure white exterior dome, the rest of the building is made up of red sandstone, with
+                white and black marble and yellow sandstone detailing, to relieve the monotony. <br> <br> <br>
+
+                The symmetrical and simple design on the exterior is in sharp contrast with the complex interior floor
+                plan, of the inner chambers, which is a square ninefold plan, where eight two-storied vaulted chambers
+                radiate from the central, double-height domed chamber. It can be entered through an imposing entrance
+                iwan (high arc) on the south, which is slightly recessed, while other sides are covered with intricate
+                jaalis, stone latticework. Underneath this white dome in a domed chamber (hujra), lies the central
+                octagonal sepulcher, the burial chamber containing a single cenotaph, that of the second Mughal Emperor,
+                Humayun. The cenotaph is aligned on the north-south axis, as per Islamic tradition, wherein the head is
+                placed to the north, while the face is turned sideways towards Mecca. The real burial chamber of the
+                Emperor, however, lies in an underground chamber, exactly beneath the upper cenotaph, accessible through
+                a separate passage outside the main structure, which remains mostly closed to visiting public. This
+                burial technique along with pietra dura, a marble and even stone inlay ornamentation in numerous
+                geometrical and arabesque patterns, seen all around the facade is an important legacy of Indo-Islamic
+                architecture, and flourished in many later mausolea of the Mughal Empire, like the Taj Mahal, which also
+                features twin cenotaphs and exquisite pietra dura craftsmanship. <br> <br> <br>
+
+                The main chamber also carries the symbolic element, a mihrab design over the central marble lattice or
+                jaali, facing Mecca in the West. Instead of the traditional Surah 24, An-Noor of Quran being inscribed
+                on the mihrabs, this one is just an outline allowing light to enter directly into the chamber, from
+                Qibla or the direction of Mecca, thus elevating the status of the Emperor above his rivals and closer to
+                divinity</h3>
+
+
+            </h3>
+        </div>
+
+
+        <div class="boxxx">
+            <h2>Char Bagh</h2>
+            <img class="textimage" src="/delhi.html/humayuns tomb/charbagh.webp" alt="">
+            <h3>
+                While the main tomb took over eight years to build, it was also placed in centre of a 30-acre (120,000
+                m2) Charbagh, a Persian-style garden with a quadrilateral layout. It was the first of its kind in South
+                Asia on such a scale.[23] The highly geometrical and enclosed Paradise garden is divided into four
+                squares by paved walkways (khiyabans) and two bisecting central water channels, reflecting the four
+                rivers that flow in jannat, the Islamic concept of paradise. Each of the four square is further divided
+                into 8 smaller gardens with pathways, creating 32 miniature gardens in all (with the mausoleum in the
+                centre), a design typical of later Mughal gardens. The central water channels appear to be disappearing
+                beneath the tomb structure and reappearing on the other side in a straight line, suggesting a Quranic
+                verse which talks of rivers flowing beneath the 'Garden of Paradise'. <br> <br> <br>
+
+                Standing in the center at the place where the main axes intersect, the tomb is similar in form and
+                position to a garden pavilion. But here it marks the place where the body of the deceased ruler rests.
+                "The garden is about sovereignty, and the mausoleum is about dynasty. When the mausoleum is implanted in
+                a garden, as it is at Humayun's tomb, sovereignty and dynasty are combined in a teleological statement
+                that the king is king as he always has been and always will be." <br> <br> <br>
+
+                The entire tomb and the garden is enclosed within high rubble walls on three sides. The fourth side was
+                meant to be the river Yamuna, which has since shifted course away from the structure. The central
+                walkways terminate at two gates: a main one in the southern wall, and a smaller one in the western wall.
+                It has two double-storey entrances; the West gate is used now, while the South gate, which was used
+                during Mughal era, is now closed. Aligned at the centre on the eastern wall lies a baradari, which is a
+                building or room with twelve doors designed to allow the free draught of air through it. On the northern
+                wall lies a hammam, a bath chamber.[36]</h3>
+        </div>
+
+
+        <div class="boxxx">
+
+            <h2>Other monuments</h2>
+            <img class="textimage" src="/delhi.html/humayuns tomb/other monuments.jpg" alt="">
+            <h3> <b> <em> Tomb and mosque of Isa Khan:</em> </b> Several monuments dot the pathway leading up to the
+                tomb enclosure from the
+                main entrance in the West. Prominent among them is one that pre-dates the main tomb itself, by twenty
+                years. Constructed in 1547 CE, it is the tomb complex of Isa Khan Niyazi, an Afghan noble in Sher Shah
+                Suri's court of the Suri dynasty, who fought against the Mughals. The octagonal tomb is positioned
+                within an octagonal garden, which was built during his own lifetime and the reign of Islam Shah Suri,
+                son of Sher Shah. It later served as a burial place for the entire family of Isa Khan. On the western
+                side of the tomb lies a three-bay wide mosque, in red sandstone. The octagonal tomb bears a striking
+                resemblance to other tombs of the Sur dynasty monuments in the Lodhi Gardens, in Delhi and demonstrates
+                a marked progression in the development of the exquisite architectural style of the main tomb. Some of
+                the architectural details present here were seen later in the main Humayun's tomb, though on a much
+                grander scale, such as the tomb being placed in a walled garden enclosure. <br> <br> 
+
+                <b> <em>Bu Halima's Tomb and Garden:</em> </b> When entering the complex from the West, visitor's
+                first enter a garden
+                complex, known as Bu Halima's Garden, though little is known about her, and since the tomb or the raised
+                platform where it once stood is not at the centre, it appears to be a later <br> <br>
+
+                <b> <em>Afsarwala Tomb and mosque: </em> </b> Standing southwest end of the complex, lies the Afsarwala
+                tomb, dedicated to
+                an unknown person. One of the marble graves inside the tomb is dated 1566-67 CE. The mosque itself can
+                be dated to the same period judging from its siting, standing as it does adjacent to the tomb, rather
+                than away from it. <br>  <br>
+
+                <b> <em> Arab Serai: </em> </b> Literally meaning the sarai (resthouse) for the horses, the structure
+                stands adjacent to the
+                Afsarwala mosque and was built by Bega Begum[39] around 1560-1561 CE, ostensibly built for the craftsmen
+                who came for the construction work. It could accommodate 300 Arabas. (in Persian ارابه means:Cart or
+                Gari (vehicle)). <br> <br>
+
+                <b> <em> Nila Gumbad: </em> </b> Standing outside the boundary of the complex is the tomb known as Nila
+                Burj (now known as
+                Nila Gumbad) or 'Blue Dome', so called because it carries striking blue glazed tiles. It was built by
+                Abdul Rahim Khan-I-Khana, son of Bairam Khan also a courtier in Mughal Emperor, Akbar's court, for his
+                servant Miyan Fahim. Fahim, who not only grew up with his son, but later also died alongside one of
+                Rahim's own sons, Feroze Khan, while fighting against the rebellion of Mughal general Mahabat Khan in
+                1625–26, during the reign of Jahangir.[40] This structure is known for its unique architecture, as it is
+                octagonal on the outside while square within; its ceiling is decorated with painted and incised plaster,
+                it has a high neck dome and shows a conspicuous absence of a double dome feature, common to tombs of the
+                period. <br>   <br>
+
+                <b> <em> Chillah Nizamuddin Aulia: </em> </b> Believed to be the residence of patron saint of Delhi,
+                Nizamuddin Auliya (d.
+                1325), is located just outside the main complex, near the northeastern corner of the principal mausoleum
+                and is an example of Tughlaq period architecture.
+
+                Yet further away from the tomb complex, lie Mughal-period monuments, Bada Bateshewala Mahal, the tomb of
+                Muzaffar Husain Mirza, the grand nephew of Humayun, built 1603–04 on platform with five arches on each
+                side, has its interior walls decorated with incised and painted plaster; the Chote Bateshewala Mahal
+                once an arcaded octagonal building with a domed ceiling and stone jaalis. Both these monument now lie
+                inside a commercial area facing the complex's parking lot.[41] Another period structure is Barapula, a
+                bridge with 12 piers and 11 arched openings, built in 1621 by Mihr Banu Agha, the chief eunuch of
+                Jahangir's court <br>  <br>
+
+                <b> <em>Barber's Tomb: </em> </b> Towards the south-east corner, within the Char Bagh, lies a tomb known
+                as Nai-ka-Gumbad,
+                or Barber's Tomb, belonging to royal barber, it is datable to 1590-91 CE, through an inscription found
+                inside. Its proximity to the main tomb and the fact that it is the only other structure within the main
+                tomb complex suggests its importance, however, there are no inscriptions suggesting as to who is
+                interred therein, the name Barbers tomb is the local name of the structure, hence still in use.[32]
+
+                The tomb stands on a raised platform, reached by seven steps from the south, it has a square plan and
+                consists of a single compartment covered with a double-dome. Inside lie two graves each inscribed with
+                verses from the Quran. Also, one of the graves is inscribed with figure 999 which may stand for the
+                Hijra year 1590–91. However, in an 1820 watercolour now at British Library, the Persian caption beneath
+                the structure reads, Maqbarah-i-Kokah i.e. "Tomb of Kaka", and Kokah or Kaka in Persian stand for
+                foster-brother (mirak brother), Mirak (a Persian title as sir) though the identity of the person remains
+                unknown, and it might be (incorrectly) referring to another nearby monument in the Chausath Khamba
+                complex, the tomb of Ataga Khan, the foster brother of Humayun, which lies in Nizamuddin West area and
+                not to the east of the Humayun's tomb. <br> <br>
+            </h3>
+        </div>
+
+
+        <div class="boxxx">
+            <h2>Restoration</h2>
+            <img class="subhashimage" src="/delhi.html/humayuns tomb/restoration.jpg" alt="">
+            <h3>Before the restoration work was undertaken, vandalism and illegal encroachments were rampant at the site
+                of the tomb, presenting a serious danger to the preservation of this invaluable treasure. At the main
+                entrance of Humayun's Tomb, dingy stalls had been put up under a very corrupt system of municipal
+                patronage known as tehbazari, and all sorts of heavy vehicles were allowed to be parked illegally in
+                these open spaces. On the Nila Gumbad side was a huge citadel of India's vote bank politics – thousands
+                of "slum dwellers" were kept by an influential section of the political leadership to serve as "bonded
+                voters" during elections. The environment of the dargah of Hazrat Nizamuddin Auliya had also been
+                ruthlessly degraded and the holy tank had become a messy cesspool. <br>
+
+                Restoration work by the Aga Khan Trust for Culture (AKTC), in collaboration with Archaeological Survey
+                of India (ASI), began around 1999 after research work, which started in 1997, and was completed in March
+                2003. Around 12 hectares of lawns were replanted, and over 2500 trees and plants, including mango,
+                lemon, neem, hibiscus and jasmine cuttings, were planted in the gardens. Installation of a new water
+                circulation system for the walkway channels was also undertaken. To ensure that water flowed naturally
+                through the channels and pools on the 12-hectare (30 acre) site without the aid of hydraulic systems,
+                the water channels were re-laid to an exacting grade of one centimetre every 40 metres (1:4000 slope).
+                This eventually enabled water to flow through the watercourses in the gardens, and dormant fountains to
+                start functioning once again. Other tasks in this mammoth restoration project included setting up a
+                rainwater harvesting system using 128 ground water recharge pits, and desilting and revitalising old
+                wells that were discovered during the restoration work.[46][47] This was first a privately funded
+                collaborative effort under the aegis of the National Cultural Fund (NCF) by the ASI. Funding included a
+                sum of $650,000 from the Aga Khan Trust for Culture of His Highness the Aga Khan, with help from the
+                Oberoi Hotels Group.[48][49][50][51] In addition, AKTC is conducting a more significant restoration at
+                Babur's tomb, the resting place of Humayun's father in Kabul. <br>
+
+                After the restoration work, the conditions in and around this complex underwent a sea-change. All the
+                stalls and other intrusions were removed and the monuments and green spaces restored. Elegant gardens
+                now surround the monuments, adding to their dignity and grace. When illuminated at night, the monument
+                looks truly magnificent. <br>
+
+                In 2009, as a part of the ongoing restoration work, the ASI and AKTC, after months of manual work using
+                hand-tools, removed from the roof a thick layer of cement concrete that had been exerting pressure of
+                about 1,102 tons on the structure. The cement concrete was originally laid in the 1920s to prevent water
+                seepage, and led to a blockage in water passages. Subsequently, each time there was leakage, a fresh
+                layer of cement was added, leading to an accumulated thickness of about 40 cm; this has now been
+                replaced with a traditional lime-based roof layer. In the next phase, similar treatment was given to the
+                tomb's first chabutra (plinth), which was originally paved with large blocks of quartzite stone, some
+                weighing over a 1,000 kg. In the 1940s, an uneven settlement in the lower plinth had been corrected by
+                covering it with a layer of concrete, adding to the disfigurement of the original Mughal flooring, which
+                matched with that at the West Gate.
+            </h3>
+        </div>
+        <div class="boxxx">
+            <h2>The Tomb in Literature</h2>
+            <img class="subhashimage" src="/delhi.html/humayuns tomb/3.jpg" alt="">
+            <h3>Letitia Elizabeth Landon published the poetical illustration The Tomb of Humaioon, Delhi in Fisher's
+                Drawing Room Scrap Book, 1833. This reflects on the scene and is based on an engraving of a painting by
+                William Purser, showing a somewhat distant view of the tomb 
+            </h3>
+              <br>
+              <br> 
+              <br>
+               <br>
+               <br>
+               <br>
+               
+               
+        </div>
+
+
+        <div class="boxxx">
+            <h2>The mausoleum today</h2>
+            <img class="subhashimage" src="/delhi.html/humayuns tomb/7.jpg" alt="">
+            <h3>Ill thought out construction plans like The Delhi Government's plans in 2006–2007 to build a new tunnel
+                to connect East Delhi to Jawaharlal Nehru Stadium, Delhi in South Delhi, and to widen the roads near the
+                tomb for the 2010 Commonwealth Games to connect National Highway-24 with Lodhi Road, also posed a
+                serious threat to the monument. Urban planners feared that the historic monument would not have been
+                able to withstand the vibrations ensuing from the construction work in such close proximity. Finally,
+                the Archaeological Survey of India was able to halt the plans.[54][55]
+
+                On 30 May 2014, the finial of the tomb was knocked off the dome by a heavy storm which struck the
+                city.[56] On 19 April 2016, India's Union Culture Minister Dr. Mahesh Sharma unveiled the restored
+                finial of the monument.[57] The original finial will be conserved.
+            </h3>
+        </div>
+
+
+        <div class="boxxx">
+            <h2>Tombs in Monument</h2>
+            <img class="subhashimage" src="/delhi.html/humayuns tomb/tombs.jpg" alt="">
+            <h3>1.Nasiruddin Muhammad Humayun <br>
+                2.Hamida Banu Begum <br>
+                3.Bega Begum <br>
+                4.Shahzada Murad Mirza <br>
+                5.Shahzada Dara Shikoh <br>
+                6.Shahzada Kam Baksh <br>
+                7.Shahzada Bidar Bakht <br>
+                8.Muizuddin Muhammad Jahandar Shah <br>
+                9.Muinuddin Muhammad Farrukhsiyar <br>
+                10.Shahzada Azim-ush-Shaan Mirza <br>
+                11.Shahzada Rafi-ush-Shaan Mirza  <br>
+                12.Shahzada Jahan Shah Mirza  <br>
+                13.Shahzada Humayun Mirza <br>
+                14.Rafi ud-Darajat  <br>
+                15.Rafi ud-Daulah  <br>
+                16.Azizuddin Muhammad Alamgir II  <br>
+            </h3>
+        </div>
+
+
+
+
+
+
+        <div>
+
+        </div>
+
+</body>
+<div class="footing1">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India </a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+    </footer>
+    <!-- Footer -->
+</div>
+
+</html>

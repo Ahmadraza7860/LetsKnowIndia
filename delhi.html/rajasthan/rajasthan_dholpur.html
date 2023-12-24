@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 35rem;
+        }
+
+        h1 {
+
+            font-size: 5rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: ;
+            margin-right: ;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+            background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+        .maincontainer:nth-child(odd) {
+            background-color: rgb(222, 222, 21);
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="img/logo.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/delhi.html/rajasthan/tonk/maindholpur.jpg" alt="">
+        <div class="DAUSA1">
+            <h1></h1>
+        </div>
+    </div>
+    <h3>DHOLPUR</h3>
+    <h2>THE LAND OF THE RED STONE</h2>
+    <P>Situated in the eastern part of Rajasthan, Dholpur became a separate district in 1982 comprising four tehsils of
+        Bharatpur – namely Dholpur, Rajakhera, Bari and Baseri. Carved out of Bharatpur district, Dholpur is surrounded
+        by Agra on the north, Morena district of Madhya Pradesh on the south and Karauli on the west.
+        Ever since its existence, Dholpur remains one of the most fascinating regions in the state that has witnessed
+        the oldest civilizations, and is extremely rich in cultural heritage. It used to be the seat of the Dholpur
+        princely state before Independence, and today is a city of diverse culture and historical grandeur.
+        The red sandstone from Dholpur is famous throughout the country and was famously used in the construction of the
+        Red Fort in Delhi. <br> <br> <br>
+        The history of this princely state is known to date back to Buddha’s time. Several centuries ago, Dholpur was a
+        part of the Mauryan Empire and came under the rule of various rulers all along the Mughal period. Around the 8th
+        to the 10th century, Dholpur was known to be ruled by the Chauhans.Until 1194, it continued to be under the rule
+        of Mohammed Gauri. <br> <br> <br>
+        Dholpur was initially known as Dhawalpuri named after the ruler Raja Dhawal Deo, also known as Dholan Deo Tomar
+        who established the city in 700 AD (though some historians have dated the formation to 1005 AD.) Later, it came
+        to be known as Dholpur..</P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/tonk/LIGHT & SOUND SHOW AT MACHKUND.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>LIGHT & SOUND SHOW AT MACHKUND</h4> <br> <br><br>
+            <h5>
+                Light & Sound Show at Machkund (Dholpur) is one of the first 3-D projection mapping-based light & sound
+                show in Rajasthan using 3-chip DLP projectors of 25,000 lumens, DMX controlled LED lights, 5.1 audio
+                surround system, etc. Show depicts story of Maharaja Machkund, his support to Devas (God) in their war
+                with demons, boon by Indradev to Maharaja Machkund for long lasting sleep of decades, killing of sages
+                by demon Kalyavan and warning to kill Shri Krishna, disturbance of sleep of Maharaj Machkund by
+                Kalyavan, killing of Kalyavan by Maharaj Machkund, creation of a water kund by Maharaja Machkund where
+                he slept for years, importance of Machkund to local public of Dholpur, etc.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1"
+                src="/delhi.html/rajasthan/tonk/CITY PALACE.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>CITY PALACE</h4> <br> <br><br>
+            <h5>
+                Also known as the Dholpur Palace, the City Palace is an opulent structure that seamlessly blends ancient
+                heritage and elegant architecture. Once home to the Royal Family, this palace was built from red sand
+                stone which illustrates the history, splendour and grandeur of the city. With the fierce Chambal ravines
+                on its south-eastern end and the beautiful city of Agra at its north-west, the City Palace transports
+                visitors back to the royal era with its impressiveness and mesmerising surroundings.</h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/tonk/ROYAL STEPWELL.jpg.crdownload" alt="">
+            <div class="jaaneman"></div>
+            <h4>ROYAL STEPWELL</h4> <br> <br><br>
+            <h5>
+                Constructed between 1873 -1880, this royal stepwell or ‘baori’ is situated behind the Nihaleshwar temple
+                in city. This four storied building has beautiful artistic pillars and carved stones..</h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/tonk/NIHAL TOWER.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>NIHAL TOWER</h4> <br> <br><br>
+            <h5>
+                Situated at the Town Hall road and locally known as Ghanta Ghar, this 150-feet high tower was started by
+                Raja Nihal Singh in the year 1880, and completed around the year 1910 by Raja Ram Singh. The foot of
+                this tower is covered with 12 equal-sized gates and covers an area of around 120 feet. </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/tonk/SHIV TEMPLE AKA CHAUSATH YOGINI TEMPLE.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>SHIV TEMPLE AKA CHAUSATH YOGINI TEMPLE</h4> <br> <br><br>
+            <h5>
+                One of the oldest Shiv temples in Dholpur, the Chopra Shiv Temple was built in the 19th century. The
+                month of March witnesses a large number of devotees and pilgrims here on the occasion of Mahashivratri.
+                Additionally, the temple is thronged with devotees who come to pray every Monday, since it is considered
+                to be the day of Lord Shiva. This ancient temple is also very famous for its mesmerising architecture.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/tonk/SHERGARH FORT.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>SHERGARH FORT</h4> <br> <br><br>
+            <h5>
+                Located to the south of Dholpur, the Shergarh Fort was built by Raja Maldeo of Jodhpur. It was
+                reconstructed in 1540 by Sher Shah Suri and named after the Sultan of Delhi. This fort was initially
+                built in defence against the rulers of Mewar. This historic monument is considered to be the epitome of
+                rich, delicately-styled architecture from the past. Adorned with carved images, statues of Hindu gods
+                and Jain motifs, the Shergarh Fort was once protected by water and is considered to be the charm of
+                Dholpur.
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/tonk/MUGHAL GARDEN, JHOR.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>MUGHAL GARDEN, JHOR</h4> <br> <br><br>
+            <h5>
+                Situated five kilometres from Dholpur, the village of Jhor is significant for housing the oldest Mughal
+                garden, known as Bagh-e-Nilofar. Though very little of the original garden has survived till date, the
+                presence of the era of Emperor Babur who started the construction can still be felt here. </h5>
+        </div>
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/tonk/TALAB-E-SHAHI.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>TALAB-E-SHAHI</h4> <br> <br><br>
+            <h5>
+                Talab-e-Shahi as the name suggests is a picturesque lake situated 27 km from Dholpur, and 5 km from Bari
+                in Rajasthan. Both the lake and the palace were originally built as a shooting lodge for Prince Shah
+                Jahan in the year 1617 A.D. The beauty and the location of this beautiful lake invites a number of
+                winter migratory fowl such as pintail, red crested pochard, common pochard, tufted duck and pigeon.
+            </h5>
+        </div>
+
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/tonk/VAN VIHAR SANCTUARY.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>VAN VIHAR SANCTUARY</h4> <br> <br><br>
+            <h5>
+                One of the oldest wildlife reserves of the rulers of Dholpur, Van Vihar Sanctuary is spread over an area
+                of about 25 sq. km over the Vindhyan Plateau. The sanctuary is characterised by a wide range of
+                fascinating flora and fauna that grabs the tourists’ attention. Endowed with animals like sambhar,
+                chital, blue bull, wild boar, sloth bear, hyena and leopard, the Van Vihar Sanctuary is very popular
+                among nature lovers visiting Dholpur. </h5>
+        </div>
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/tonk/DHOLPUR PALACE.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>DHOLPUR PALACE</h4> <br> <br><br>
+            <h5>
+                The Dholpur Palace, renowned across the country for its locally quarried sandstone, originally belonged
+                to the Rajputana kingdom. This famous red stone was widely used in construction of spectacular forts and
+                palaces as a mark of protection around the widely spread dominion. The palace’s classic exteriors and
+                rich heritage is alluring to the onlookers and invites them for a journey of its vibrant history. </h5>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footing1">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-black text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                            </p>
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India
+                                </a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                            <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>

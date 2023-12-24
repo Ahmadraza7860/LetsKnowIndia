@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 30rem;
+        }
+
+        h1 {
+
+            font-size: 5rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: ;
+            margin-right: ;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+            background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+        .maincontainer:nth-child(odd) {
+            background-color: rgb(222, 222, 21);
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="img/logo.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/delhi.html/rajasthan/pali/main2.jpg" alt="">
+        <div class="DAUSA1">
+            <h1></h1>
+        </div>
+    </div>
+    <h3>PALI</h3>
+    <h2>THE TRADE CENTRE OF THE ROYAL STATE</h2>
+    <P>Eponymously known as the Industrial City, Pali has been an important part of Rajasthan from centuries and a hub
+        for merchant activities. Carved out of erstwhile state of Jodhpur, Pali flaunts its rich heritage and culture in
+        the form of beautiful Jain temples and other elaborate monuments. Resembling an irregular triangle, this
+        district shares a common border with eight districts in Rajasthan namely, Nagaur and Jodhpur in the north,
+        Barmer in the west, Rajmasand and Udaipur to the south-east, Ajmer to the north-east and Sirohi and Jalore in
+        the south and south-west respectively.</P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/pali/ranakpur.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>RANAKPUR JAIN TEMPLES</h4> <br> <br><br>
+            <h5>
+                Built in the 15th century after a Jain businessman was believed to have had a divine vision, the
+                Ranakpur Jain Temple is dedicated to Adinath, a very important figure in Jain cosmology. Named after the
+                provincial monarch Rana Kumbha who supported and encouraged the construction of these temples, the
+                Ranakpur Jain Temples stand in a valley of the Aravalli mountains. It’s a temple complex – not just one
+                temple. Know More
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/pali/jawai dam.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>JAWAI DAM</h4> <br> <br><br>
+            <h5>
+                Built across a tributary of the river Luni, Jawai dam was constructed by Maharaja Umaid Singh of
+                Jodhpur. It is believed to be the biggest dam in western Rajasthan. Besides being a primary source of
+                water for nearby villages and Jodhpur city, Jawai dam is also famously a winter paradise for migratory
+                birds and leopards and houses crocodiles.
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/pali/parshuram-mahadev-temple-rajasthan.webp" alt="">
+            <div class="jaaneman"></div>
+            <h4>PARSHURAM MAHADEV TEMPLE</h4> <br> <br><br>
+            <h5>
+                A cave temple dedicated to Lord Shiva, the ParshuramMahadev Temple has a fascinating story. It is said
+                that Parshuram, an avatar of Lord Vishnu, made the cave with his axe and worshipped Lord Shiva here.
+                Situated over 3990 feet above sea level, this temple houses naturally-made figures of Lord Ganesha and
+                Lord Shiva.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/pali/NIMBO KA NATH TEMPLE.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>NIMBO KA NATH TEMPLE</h4> <br> <br><br>
+            <h5>
+                JThe NimbokaNath Temple is situated on the Falna-Sanderav route and is dedicated to Lord Shiva. Legend
+                has it that Kunti, the mother of the Pandavas worshipped Lord Shiva and spent most of her time during
+                their exile worshipping Mahadev here. It is also said that Pandavas had built a Navdurga in this area.
+                Hence, this serene temple attracts many tourists all-round the year. The temple is also known to
+                organize various fairs that witness large footfall of devotees
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/pali/sun-temple-osian-rajasthan.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>SUN TEMPLE</h4> <br> <br><br>
+            <h5>
+                The Sun Temple in Ranakpur is a popular Surya/Sun Temple that is called the Surya Narayan Temple. Built
+                originally in the 13 th century, the temple was reconstructed in the 15 th century. It is constructed
+                with stunning white limestone in Nagara style, with intricate detailing. The elaborate walls of the
+                temple make it a splendid piece of architecture. Containing a sanctum with a Chikhara as the crown, the
+                temple faces eastwards. Before the temple, there is an octagonal mandap as well. Consisting of six
+                verandas, the mandap is a beautiful one. When you step inside the temple, you could see the Lord Sun
+                idol on a chariot. The temple walls have a host of spectacular carvings of horses, celestial bodies, and
+                warriors. Sharply depicting the artistic excellence of the bygone eras, the temple is an architectural
+                beauty. The Sun temple of Ranakpur attracts many devotees from across the country who visits the temple
+                to get the blessings of Lord Son. Many of the devotees also visit the Amba Mata temple and Ranakpur Jain
+                Temple in the nearby area. Being managed by the Udaipur Royal family trust, the temple is a must visit
+                for the intricate carvings and revel in the architectural glory of the ancient eras.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/pali/om_bana.JPG.crdownload" alt="">
+            <div class="jaaneman"></div>
+            <h4>OM BANNA DHAM</h4> <br> <br><br>
+            <h5>
+                Located at about 40 kilometres from the city of Jodhpur, is a shrine dedicated to Om Banna. The shrine
+                is on the Pali-Jodhpur National Highway 65. Om Banna, also known as Bullet Baba, was a person who had a
+                350cc Royal Enfield Bullet motorcycle but was killed in an accident at the very spot where the shrine is
+                right now. This was back in the year 1988. When the fateful accident took place, the police took the
+                bike in custody and parked it in the police station. But, the next morning, something unusual happened.
+                The bike was found on the same spot where the accident took place. The police, thinking of it as a
+                prank, took the bike back and kept it at the police station again. These unusual turn of events, led
+                people to believe that it was due to the magical powers of Om Banna. Today, the bike can be seen kept in
+                a glass case and people throng to the place to worship it. If you visit the shrine, you will see the
+                bike fully covered in strings by worshippers who visit the place to pray for their safe journey. Visit
+                the place to see this unusual shrine and witness something peculiar yet interesting.
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/pali/SAMAND LAKE.webp" alt="">
+            <div class="jaaneman"></div>
+            <h4>SAMAND LAKE</h4> <br> <br><br>
+            <h5>
+                The Samand Lake, also called as Sardar Samand Lake, is situated 60 kms south-east of Jodhpur off the
+                Jodhpur-Pali route. Developed by Maharaja Umaid Singh in the year of 1933, the lake is situated near the
+                Sardar Samand Lake Palace. Credited as being a bird-watcher’s haven, the lake is beautiful to look at.
+                The lake attracts numerous local as well as migratory birds, which makes for a breath taking view. Upon
+                visiting the lake, you can easily spot beautiful birds in the skyline or floating in the lake, such as
+                the Himalayan griffon, yellow- legged green pigeon, Dalmatian pelican, and many other lovely birds. Plan
+                a trip to the Samand Lake to witness the raw beauty of nature. The lake looks calm amidst the Sardar
+                Samand Lake Palace. On your way to the lake, you will come across a wildlife area where you can spot
+                animals like Chinkara, Neelgai, and Blackbuck. Plus, you will also come across Bishnoi villages where
+                you can witness the Bishnoi tribal community, which enriches the experience even further.
+            </h5>
+        </div>
+
+
+      
+
+
+
+
+
+
+
+
+    <div class="footing1">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-black text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                            </p>
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India
+                                </a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                            <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>

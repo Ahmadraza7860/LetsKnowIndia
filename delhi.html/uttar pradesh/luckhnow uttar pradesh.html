@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 30rem;
+        }
+
+        h1 {
+
+            font-size: 4rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: ;
+            margin-right: ;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+                     background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+        .maincontainer:nth-child(odd) {
+            background-color: rgb(222, 222, 21);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="#distination">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/main states pic/heroo10.jpg" alt="">
+        <div class="DAUSA1">
+            <h1></h1>
+        </div>
+    </div>
+    <h3>Lukhnow</h3>
+    <h2>Nawabon ka shahar</h2><p>
+    <h5>Lucknow, the capital of Uttar Pradesh, lies in the middle of the Heritage architecture.</h5>
+        This bustling city, famed for its Nawabi era finesse and amazing food, is a unique mix of 
+        the ancient and the modern. It is home to extraordinary monuments depicting a fascinating 
+        blend of ancient, colonial and oriental architecture.Literature, cuisine, performing arts 
+        and tehzeeb put Lucknow a cut above the rest – and the world acknowledges it.</P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/main states pic/heroo11.jpg">
+            <div class="jaaneman"></div>
+            <h4>Char bagh</h4> <br> <br><br>
+            <h5>It gives an ideal traditional warm welcome to every visit Overpowering in dimensions 
+                yet aesthetically designed, Charbagh railway station built in 1914 which incorporates 
+                the best of Rajasthani and Mughal architecture
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/main states pic/heroo14.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Clock Tower</h4> <br> <br><br>
+            <h5>
+                Near Rumi Darwaza, this 221 ft. high Clock Tower was built in 1881 to mark the arrival 
+                of Sir George Couper, the first Lieutenant Governor of the United Province of Awadh.
+
+
+
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/main states pic/heroo13.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Jama Masjid</h4> <br> <br><br>
+            <h5>
+                Of special importance due to the assimilation of Iranian architectural elements, it 
+                was built in 1648 A.D. by Emperor Shah Jahan's daughter, Jahanara Begum.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/main states pic/heroo15.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Dilkusha</h4> <br> <br><br>
+            <h5>
+                The Kothi and its adjoining magnificent garden were created by Nawab Saadat Ali Khan. It is almost an exact 
+                replica of an English country house called Seaton Delavel in Northumberland, England, built in 1721
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/main states pic/heroo16.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Rumi Darwaza</h4> <br> <br><br>
+            <h5>
+                The 60 feet high Rumi Gate was constructed during the reign of Nawab Asaf-ud-Daula in 1784-86.It is said to be 
+                identical in design to an ancient portal at Constantinople in Turkey and is also referred to as Turkish Gate. 
+                It is a huge ornate structure, marked by an eight faceted chhatri in its uppermost part. In earlier times it was 
+                used to mark the entrance to the Old Lucknow City. It is now adopted as a symbol of the city of Lucknow. It was 
+                built by Nawab Asaf-ud-Daula to generate employment during the famine of 1784.
+
+
+            </h5>
+        </div>
+
+
+
+        </div>
+        
+        </div>
+       
+    </div>
+
+</body>
+
+</html>

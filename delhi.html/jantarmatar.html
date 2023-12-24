@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+
+            padding: 0%;
+            margin: 1px;
+        }
+
+        .form-inline {
+            position: absolute;
+            right: 2rem;
+
+        }
+
+        .dpimage {
+            height: 40rem;
+            width: 79rem;
+            box-shadow: 10px;
+            border-radius: 5px;
+
+        }
+
+        h2 {
+            background-color: antiquewhite;
+            margin: 15px;
+            font-weight: 700;
+
+            border-bottom: 5px solid rgb(15, 13, 13);
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        .span1 {
+            font-size: 4rem;
+            font-weight: 150px;
+
+        }
+
+        h6 {
+            background-color: rgba(240, 248, 255, 0.301);
+            transition: .5;
+            position: absolute;
+            margin-top: 19rem;
+            font-size: 25px;
+            font-weight: 700;
+            color: aliceblue;
+
+        }
+
+        .firstclass {
+            display: flex;
+        }
+
+        .textimage {
+            margin-right: 20px;
+            margin: 10px;
+            float: left;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 8px;
+            box-shadow: 10px;
+            border: 5px solid wheat;
+        }
+
+        .photogallery {
+            height: 15rem;
+            width: 10rem;
+
+        }
+
+        .galley {
+            display: flex;
+            align-items: center;
+            margin-left: 15rem;
+        }
+
+        h4 {
+            margin: 20px;
+            font-weight: 500;
+            color: burlywood;
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        .boxxx {
+            margin: 5px;
+            padding: 5px;
+            border: 2px;
+            margin-top: 5rem;
+        }
+
+        .footing1 {
+            margin-top: 12rem;
+        }
+
+        .subhashimage {
+
+            margin-right: 20px;
+            margin: 10px;
+            float: right;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 8px;
+            box-shadow: 10px;
+            border: 5px solid wheat;
+
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        } .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        a {
+            color: black;
+        }
+
+        .box:hover {
+            transform: scale(1.015);
+           
+        }
+s
+
+        body {}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div class="firstclass">
+        <img class="dpimage" src="/delhi.html/jantar mantar/1.jpg" alt="">
+        <h6><em><span class="span1">Jantar Mantar</span><br> Jantar Mantar is located in the modern city of New Delhi.
+                “Jantar Mantar” literally means “instruments for measuring the harmony of the heavens”.[1] It consists
+                of 13 architectural astronomy instruments. </em></h6>
+    </div>
+
+    <div class="boxxx">
+        <h2>Jantar Mantar</h2><br>
+        <h3>Jantar Mantar is located in the modern city of New Delhi. “Jantar Mantar” literally means “instruments for
+            measuring the harmony of the heavens”.[1] It consists of 13 architectural astronomy instruments. The site is
+            one of five built by Maharaja Jai Singh II of Jaipur, from 1723 onwards, revising the calendar and
+            astronomical tables. Jai Singh, born in 1688 into a royal Rajput family that ruled the regional kingdom, was
+            born into an era of education that maintained a keen interest in astronomy. There is a plaque fixed on one
+            of the structures in the Jantar Mantar observatory in New Delhi that was placed there in 1910 mistakenly
+            dating the construction of the complex to the year 1710. Later research, though, suggests 1724 as the actual
+            year of construction. Its height is 723 feet (220 m). <br> <br>
+
+            The primary purpose of the observatory was to compile astronomical tables, and to predict the times and
+            movements of the sun, moon and planets. Some of these purposes nowadays would be classified as astronomy.
+            <br> <br>
+
+            Completed in 1724, the Delhi Jantar Mantar had decayed considerably by 1857 uprising. The Ram Yantra, the
+            Samrat Yantra, the Jai Prakash Yantra and the Misra Yantra are the distinct instruments of Jantar Mantar.
+            The most famous of these structure, the Jaipur, had also deteriorated by the end of the nineteenth century
+            until in 1901 Maharaja Ram Singh set out to restore the instrument.
+        </h3>
+    </div>
+    <div>
+        <h2>Photo gallery</h2>
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/2.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/3.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/4.webp" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/5.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/6.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/7.webp" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/8.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/9.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/10.webp" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/jantar mantar/1.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="boxxx">
+            <h2>History</h2>
+            <img class="textimage" src="/delhi.html/jantar mantar/9.jpg" alt="">
+            <h3>Jantar Mantar located in New Delhi is built by Maharaja Jai Singh II of Jaipur in the year 1724. The
+                maharaja built five observatories during his ruling time in the 18th century. Among these five the one
+                in Delhi is the first to be built. The other four observatories are located in Ujjain, Mathura,
+                Varanasi, and Jaipur. <br>
+                <br>
+
+                The objective behind the construction of these observatories was to assemble astronomical data and to
+                accurately predict the movement of the planets, moon, sun, etc. in the solar system. It was one of its
+                kind at the time it was built. By the year 1867, when India was under the British Raj, the observatory
+                had underwent considerable decay.
+
+
+
+            </h3>
+        </div>
+
+        <div class="boxxx">
+            <h2>Purpose of individual structures</h2>
+            <img class="subhashimage" src="/delhi.html/jantar mantar/6.jpg" alt="">
+            <h3>The 4 distinct instruments within the observatory of Jantar Mantar in New Delhi: the Samrat Yantra, the
+                Jayaprakash, Rama Yantra and the Misra Yantra. <br>
+                  <br>
+
+                <b> Samrat Yantra: </b> The Samrat Yantra, or Supreme Instrument, is a giant triangle that is basically an equal
+                hour sundial. It is 70 feet high, 114 feet long at the base, and 10 feet thick. It has a 128-foot
+                ih-long (39 m) hypotenuse that is parallel to the Earth's axis and points toward the North Pole. On
+                either side of the triangle is a quadrant with graduations indicating hours, minutes, and seconds. At
+                the time of the Samrat Yantra's construction, sundials already existed, but the Samrat Yantra turned the
+                basic hug sundial into a precision tool for measuring declination and other related coordinates of
+                various heavenly bodies. The Vrihat Samrat Yantra can calculate the local time at an accuracy of up to
+                two seconds and is considered the world's largest sundial.[1]  <br>
+                <br>
+                <b> Jaya Prakash Yantra: </b> The Jaya Prakash consists of hollowed out hemispheres with markings on their
+                concave surfaces. Crosswires were stretched between points on their rim. From inside the Ram, an
+                observer could align the position of a star with various markings or a window's edge. This is one of the
+                most versatile and complex instruments that can give the coordinates of celestial objects in multiple
+                systems- the Azimuthal-altitude system and the Equatorial coordinate system. This allowed for the easy
+                conversation of the popular celestial system.[4] <br>
+                 <br>
+                <b> Rama Yantra: </b> Two large cylindrical structures with open top, used to measure the altitude of stars based
+                on the latitude and the longitude on the earth. <br>
+                  <br>
+               <b> Misra Yantra: </b> The Misra Yantra (literally mixed instrument) is a composition of 5 instruments designed
+                as a tool to determine the shortest and longest days of the year. It could also be used to indicate the
+                exact moment of noon in various cities and locations regardless of their distance from Delhi. The Misra
+                yantra was able to indicate when it was noon in various cities all over the world and was the only
+                structure in the observatory not invented by Jai Singh II. <br>
+                <br>
+                <b> Shasthansa Yantra: </b> Using a pinhole camera mechanism, it has been built within the towers that support
+                the quadrant scales. It is used to measure specific measurements of the sun such as the zenith distance,
+                declination, and diameter of the sun.[4] <br>
+                  <br>
+               <b> Kapala Yantra: </b> Built on the same principle as the jai Prakash, the instrument is used more as a
+                demonstration to indicate the transformation of one coordinate system to another. Not used for active
+                celestial observation.[4] <br>
+                <br>
+               <b> Rasivalya Yantra: </b> Twelve of these structure where built, each referring to the zodiacal constellations
+                by measuring the latitude and longitude of a celestial object at the very moment the celestial object
+                crosses the meridian.</h3>
+
+
+            </h3>
+        </div>
+
+
+        
+
+
+
+
+
+        <div>
+
+        </div>
+
+</body>
+<div class="footing1">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India </a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+    </footer>
+    <!-- Footer -->
+</div>
+
+</html>

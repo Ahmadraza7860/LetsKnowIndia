@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+
+            padding: 0%;
+            margin: 1px;
+        }
+
+        .form-inline {
+            position: absolute;
+            right: 2rem;
+
+        }
+
+        .dpimage {
+            height: 40rem;
+            width: 79rem;
+            box-shadow: 10px;
+            border-radius: 5px;
+
+        }
+
+        h2 {
+            background-color: antiquewhite;
+            margin: 15px;
+            font-weight: 700;
+
+            border-bottom: 5px solid rgb(15, 13, 13);
+        }
+
+        h4 {
+            margin: 20px;
+            font-weight: 500;
+            color: burlywood;
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        .span1 {
+            font-size: 4rem;
+            font-weight: 150px;
+
+        }
+
+        h6 {
+            background-color: rgba(240, 248, 255, 0.301);
+            transition: .5;
+            position: absolute;
+            margin-top: 19rem;
+            font-size: 25px;
+            font-weight: 700;
+            color: aliceblue;
+
+        }
+
+        .firstclass {
+            display: flex;
+        }
+
+        .textimage {
+            margin-right: 20px;
+            margin: 10px;
+            float: left;
+            height: 15rem;
+            width: 10rem;
+        }
+
+        .photogallery {
+            height: 15rem;
+            width: 10rem;
+
+        }
+
+        .galley {
+            display: flex;
+            align-items: center;
+            margin-left: 15rem;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        } .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        a {
+            color: black;
+        }
+
+        .box:hover {
+            transform: scale(1.015);
+           
+        }
+
+
+        body {}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div class="firstclass">
+        <img class="dpimage" src="/delhi.html/red fort/shutterstock_1199337631_20200102114237.jpg" alt="">
+        <h6><em><span class="span1">Red Fort</span><br> This victory tower is a symbol of the synthesis of
+                traditional Islamic
+                architecture
+                and Southwestern Asian design. </em></h6>
+    </div>
+
+    <div>
+        <h2>Red Fort</h2><br>
+        <h3>The Red Fort or Lal Qila (Hindustani: [laːlqiːlaː]) is a historic fort in Old Delhi, Delhi in India that
+            served as the main residence of the Mughal Emperors. Emperor Shah Jahan commissioned construction of the Red
+            Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi. Originally red and white, its
+            design is credited to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal. The fort represents
+            the peak in Mughal architecture under Shah Jahan, and combines Persianate palace architecture with Indian
+            traditions.
+
+            The fort was plundered of its artwork and jewels during Nadir Shah's invasion of the Mughal Empire in 1739.
+            Most of the fort's marble structures were subsequently demolished by the British following the Indian
+            Rebellion of 1857. The fort's defensive walls were largely undamaged, and the fortress was subsequently used
+            as a garrison.
+
+            On 15 August 1947, the first Prime Minister of India, Jawaharlal Nehru, raised the Indian flag above the
+            Lahori Gate. Every year on India's Independence Day (15 August), the Prime Minister hoists the Indian
+            tricolour flag at the fort's main gate and delivers a nationally broadcast speech from its ramparts.
+
+            The Red Fort was designated a UNESCO World Heritage Site in 2007 as part of the Red Fort Complex.[1][2]12]
+        </h3>
+    </div>
+    <div>
+        <h2>Photo gallery</h2>
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/2.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/3.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/4.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/5.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/7.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/8.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/9.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/10.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/red fort/5.jpg" alt="">
+            </div>
+
+        </div>
+        <div>
+            <h2>Architecture</h2>
+            <img class="textimage" src="/delhi.html/red fort/10.jpg" alt="">
+            <h3>The World Heritage Convention characterises the Red Fort as representing "the zenith of Mughal
+                creativity". The fort synthesises Islamic palace structure with local traditions, resulting in a
+                confluence of "Persian, Timurid, and Hindu architecture". The fort served as an inspiration for later
+                buildings and gardens across the Indian subcontinent.[1]
+
+                The Red fort has an area of 254.67 acres (103.06 ha) enclosed by 2.41 kilometres (1.50 mi) of defensive
+                walls,[55] punctuated by turrets and bastions that vary in height from 18 metres (59 ft) on the river
+                side to 33 metres (108 ft) on the city side. The fort is octagonal, with the north–south axis longer
+                than the east–west axis. The marble, floral decorations and the fort's double domes exemplify later
+                Mughal architecture.[56]
+
+                It showcases a high level of ornamentation, and the Kohinoor diamond was reportedly part of the
+                furnishings. The fort's artwork synthesises Persian, European and Indian art, resulting in a unique
+                Shahjahani style rich in form, expression and colour. Red Fort is one of the building complexes of India
+                encapsulating a long period of history and its arts. Even before its 1913 commemoration as a monument of
+                national importance, efforts were made to preserve it for posterity.
+
+                The Lahori and Delhi Gates were used by the public, and the Khizrabad Gate was for the emperor.[11]: 04 
+                The Lahori Gate is the main entrance, leading to a domed shopping area known as the Chatta Chowk
+                (covered bazaar).</h3>
+        </div>
+
+        <div>
+            <h2>History</h2>
+            <img class="textimage" src="/delhi.html/red fort/4.jpg" alt="">
+            <h3>Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided to shift
+                his capital from Agra to Delhi. Originally red and white, Shah Jahan's favourite colours,[7] its design
+                is credited to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal.[8][9] The fort lies
+                along the Yamuna River, which fed the moats surrounding most of the walls.[10] Construction began in the
+                sacred Islamic month of Muharram, on 13 May 1638.[11]: 01  Supervised by Shah Jahan, it was completed on
+                6 April 1648.[12][13][14] Unlike other Mughal forts, the Red Fort's boundary walls are asymmetrical to
+                contain the older Salimgarh Fort.[11]: 04  The fortress-palace was a focal point of the city of
+                Shahjahanabad, which is present-day Old Delhi. Shah Jahan's successor, Aurangzeb, added the Moti Masjid
+                (Pearl Mosque) to the emperor's private quarters, constructing barbicans in front of the two main gates
+                to make the entrance to the palace more circuitous.[11]: 08 
+                In 1783 the Sikh Misl Karor Singhia, led by Baghel Singh, conquered Delhi and the Red Fort.[26] Baghel
+                Singh, Jassa Singh Ahluwalia and Jassa Singh Ramgarhia all allied with a 40,000 force and looted the
+                area from Awadh to Jodhpur. After negotiations, Baghel Singh and his forces agreed to leave Delhi and
+                reinstate the Mughal emperor Shah Alam II. The condition of their retreat included the construction of
+                seven Sikh Gurdwaras in Delhi, including the Gurudwara Sis Ganj in Chandni Chowk.[27]
+
+                In 1788, a Maratha garrison occupied the Red fort and Delhi alongside providing protection to the Mughal
+                Emperor. Mahadji Scindia signed a treaty with the Sikhs where they were warned not to enter Delhi or ask
+                for the Rakhi tribute. The fort came under the control of the East India Company following the Second
+                Anglo-Maratha War in 1803.[26]
+
+                During the Second Anglo-Maratha War, forces of the East India Company defeated Maratha forces of Daulat
+                Rao Scindia in the Battle of Delhi; this ended Maratha control over the city and their control of the
+                Red Fort.[28] After the battle, the British East India Company took over the administration of Mughal
+                territories and installed a Resident at the Red Fort.[11]: 11  The last Mughal emperor to occupy the
+                fort, Bahadur Shah II, became a symbol of the 1857 rebellion against the British East India Company in
+                which the residents of Shahjahanabad participated.[11]: 15 </h3>
+        </div>
+
+        <div>
+            <h2>Modern era</h2>
+            <img class="textimage" src="/delhi.html/red fort/8.jpg" alt="">
+            <h3>The Red Fort, the largest monument in Delhi,[41] is one of its most popular tourist destinations[42] and
+                attracts thousands of visitors every year.[43] It is a monument of national significance; every year on
+                India's Independence Day (15 August), the Prime Minister of India hoists the country's flag at the Red
+                Fort and delivers a nationally broadcast speech from its ramparts.[44] The fort also appears on the back
+                of the ₹500 note of the Mahatma Gandhi New Series of the Indian rupee.[45]
+
+                The major architectural features are in mixed condition; the extensive water features are dry. Some
+                buildings are in fairly good condition, with their decorative elements undisturbed; in others, the
+                marble inlaid flowers have been removed by looters. The tea house, although not in its historical state,
+                is a working restaurant. The mosque and hammam or public baths are closed to the public, although
+                visitors can peer through their glass windows or marble latticework. Walkways are crumbling, and public
+                toilets are available at the entrance and inside the park. The Lahori Gate entrance leads to a mall with
+                jewellery and craft stores. There is also a museum of "blood paintings", depicting young 20th-century
+                Indian martyrs and their stories, an archaeological museum and an Indian war-memorial museum.[citation
+                needed]
+            </h3>
+        </div>
+
+        <div>
+            <h2>Major structures</h2>
+            <img class="textimage" src="/delhi.html/red fort/8.jpg" alt="">
+            <h3>The most important surviving structures are the walls and ramparts, the main gates, the audience halls
+                and the imperial apartments on the eastern riverbank.[57]
+                <H4>Lahori Gate</H4>
+                <h3>
+                    Main article: Lahori Gate, Delhi
+                    Red sandstone gate of the fortress
+                    The Delhi Gate, which is almost identical in appearance to the Lahori Gate
+                    The Lahori Gate is the main gate to the Red Fort, named for its orientation towards the city of
+                    Lahore. During Aurangzeb's reign, the beauty of the gate was altered by the addition of a barbican,
+                    which Shah Jahan described as "a veil drawn across the face of a beautiful woman".[58][59][60] Every
+                    Indian Independence Day since 1947, the national flag is unfurled and the prime minister makes a
+                    speech from its ramparts.
+                </h3>
+
+                <H4>Delhi Gate</H4>
+                <h3>
+                    Main article: Delhi Gate (Red Fort)
+                    The Delhi Gate is the southern public entrance and is similar in layout and appearance to the Lahori
+                    Gate. Two life-size stone elephants on either side of the gate face each other.[61]
+                </h3>
+
+                <H4>Chhatta Chowk</H4>
+                <h3>
+                    Main article: Chhatta Chowk
+                    Adjacent to the Lahori Gate is the Chhatta Chowk (or Meena Bazaar), where silk, jewellery and other
+                    items for the imperial household were sold during the Mughal period. This market was earlier known
+                    as Bazaar-i-Musaqqaf or Chatta-bazaar (both meaning "roofed market"). Lahori Gate, the entrance
+                    portal of the Red Fort, leads into an open outer court, where it crosses the large north–south
+                    street which originally divided the fort's military functions (to the west) from the palaces (to the
+                    east). The southern end of the street is the Delhi Gate.[62]
+                </h3>
+
+                <H4>Naubat Khana</H4>
+                <h3>
+                    In the east wall of the court stands the now-isolated Naubat Khana (Persian: "Waiting Hall"), also
+                    known as Nakkar Khana (drum house). Music was played daily, at scheduled times and everyone, except
+                    royalty, were required to dismount. Later Mughal kings Jahandar Shah (1712–13) and Farrukhsiyar
+                    (1713–19) are said to have been murdered here. The Indian War Memorial Museum is located on the
+                    second floor.[63] The vaulted arcade of the Chhatta Chowk ends in the centre of the outer court,
+                    which measured 540 by 360 feet (160 m × 110 m).[64] The side arcades and central tank were
+                    demolished after the 1857 rebellion.
+                </h3>
+
+                <H4>Diwan-i-Aam</H4>
+                <h3>
+                    The inner main court to which the Nakkar Khana led was 540 feet (160 m) wide and 420 feet (130 m)
+                    deep, surrounded by guarded galleries.[64] On the far side is the Diwan-i-Aam, the Public Audience
+                    Hall. This was a place for the official affairs of commoners who sought after legal matters such as
+                    tax issues, hereditary complications, and awqaf.
+
+                    The hall's columns and engrailed arches exhibit fine craftsmanship, and the hall was originally
+                    decorated with white chunam stucco.[64] In the back in the raised recess the emperor gave his
+                    audience in the marble balcony (jharokha).
+
+                    The Diwan-i-Aam was also used for state functions.[56] The courtyard (mardana) behind it leads to
+                    the imperial apartments.
+                </h3>
+
+
+                <H4>Diwan-i-Khas</H4>
+                <h3>
+                    Main article: Diwan-i-Khas (Red Fort)
+
+                    Diwan-i-Khas in the mid-nineteenth century
+                    The Diwan-i-Khas (Hall of Private Audience) was a building for the official affairs and requests of
+                    the novelty and royal family. A gate on the north side of the Diwan-i-Aam leads to the innermost
+                    court of the palace (Jalau Khana) and the Diwan-i-Khas.[69] It is constructed of white marble,
+                    inlaid with precious stones. The once-silver ceiling has been restored in wood. François Bernier
+                    described seeing the jewelled Peacock Throne here during the 17th century. At either end of the
+                    hall, over the two outer arches, is an inscription by Persian poet Amir Khusrow:
+                </h3>
+
+                <H4>Nahr-i-Bihisht</H4>
+                <h3>
+                    The imperial apartments consist of a row of pavilions on a raised platform along the eastern edge of
+                    the fort, overlooking the Yamuna river. The pavilions are connected by a canal, known as the
+                    Nahr-i-Bihisht ("Stream of Paradise"), running through the center of each pavilion. Water is drawn
+                    from the Yamuna via a tower, the Shahi Burj, at the northeast corner of the fort. The palace is
+                    designed to emulate paradise as described in the Quran. In the riverbed below the imperial
+                    apartments and connected buildings was a space known as zer-jharokha ("beneath the
+                    latticework").[64]
+                </h3>
+
+                <H4>Baoli</H4>
+                <h3>
+                    The baoli or step-well is one of the few monuments that were not demolished by the British after the
+                    Indian Rebellion of 1857. The chambers within the baoli were converted into a prison. During the
+                    Indian National Army Trials (Red Fort Trials) in 1945–46, it housed Indian National Army officers
+                    Shah Nawaz Khan (general), Colonel Prem Kumar Sahgal, and Colonel Gurbaksh Singh Dhillon. The Red
+                    Fort Baoli is uniquely designed with two sets of staircases leading down to the well.[72]
+                </h3>
+
+                <H4>Moti Masjid</H4>
+                <h3>
+                    West of the hammam is the Moti Masjid, the Pearl Mosque. A later addition, it was built in 1659 as a
+                    private mosque for Emperor Aurangzeb. It is a small, three-domed mosque carved in white marble, with
+                    a three-arched screen leading down to the courtyard.[73]
+                </h3>
+
+                <H4>Hira Mahal</H4>
+                <h3>
+                    The Hira Mahal ("Diamond Palace") is a pavilion on the southern edge of the fort, built under
+                    Bahadur Shah II and at the end of the Hayat Baksh garden.[74] The Moti Mahal on the northern edge, a
+                    twin building, was demolished during (or after) the 1857 rebellion. The Shahi Burj was the emperor's
+                    main study; its name means "Emperor's Tower",[75] and it originally had a chhatri on top. Heavily
+                    damaged, the tower is undergoing reconstruction. In front of it is a marble pavilion added by
+                    Emperor Aurangzeb.[76]
+                </h3>
+
+                <H4>Hayat Bakhsh Bagh</H4>
+                <h3>
+                    The Hayat Bakhsh Bagh (Persian: حیات بخش باغ, lit. 'Life-Bestowing Garden') is located in the
+                    northeast part of the complex. It features a reservoir, which is now dry, and channels through which
+                    the Nahr-i-Bihisht flows. At each end is a white marble pavilion, called the Sawan and Bhadon
+                    Pavilions, Hindu months, Sawan and Bhadon. In the centre of the reservoir is the red-sandstone Zafar
+                    Mahal, added in around 1842 by Bahadur Shah Zafar, and named after him.[77]
+
+                    Smaller gardens (such as the Mehtab Bagh or Moonlight Garden) existed west of it, but were
+                    demolished when the British barracks were built.[11] There are plans to restore the gardens.[78]
+                    Beyond these, the road to the north leads to an arched bridge and the Salimgarh Fort.
+                </h3>
+            </h3>
+        </div>
+        <div>
+            <h2>Modern era</h2>
+            <img class="textimage" src="/delhi.html/red fort/8.jpg" alt="">
+            <h3>The Red Fort, the largest monument in Delhi,[41] is one of its most popular tourist destinations[42] and
+                attracts thousands of visitors every year.[43] It is a monument of national significance; every year on
+                India's Independence Day (15 August), the Prime Minister of India hoists the country's flag at the Red
+                Fort and delivers a nationally broadcast speech from its ramparts.[44] The fort also appears on the back
+                of the ₹500 note of the Mahatma Gandhi New Series of the Indian rupee.[45]
+
+                The major architectural features are in mixed condition; the extensive water features are dry. Some
+                buildings are in fairly good condition, with their decorative elements undisturbed; in others, the
+                marble inlaid flowers have been removed by looters. The tea house, although not in its historical state,
+                is a working restaurant. The mosque and hammam or public baths are closed to the public, although
+                visitors can peer through their glass windows or marble latticework. Walkways are crumbling, and public
+                toilets are available at the entrance and inside the park. The Lahori Gate entrance leads to a mall with
+                jewellery and craft stores. There is also a museum of "blood paintings", depicting young 20th-century
+                Indian martyrs and their stories, an archaeological museum and an Indian war-memorial museum.[citation
+                needed]
+            </h3>
+        </div>
+
+        <div>
+
+        </div>
+
+</body>
+<div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India </a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+    </footer>
+    <!-- Footer -->
+</div>
+
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 35rem;
+        }
+
+        h1 {
+
+            font-size: 5rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: ;
+            margin-right: ;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+            background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+        .maincontainer:nth-child(odd) {
+            background-color: rgb(222, 222, 21);
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/delhi.html/goa/main dp2.jpg" alt="">
+        <div class="DAUSA1">
+            <h1></h1>
+        </div>
+    </div>
+    <h3>Goa</h3>
+    <h2>THE LAND OF Beaches and Beauty</h2>
+    <P>Baga Beach – The Best Beach Of Goa. If you are looking for a beach where you can relax and bask some sun, <br>
+        listening to the waves, Baga Beach is one of the best beaches in Goa for family and friends day out.</P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/delhi.html/goa/palolem-sea-beach.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Palolem Beach</h4> <br> <br><br>
+            <h5>
+                It's known for its beautiful crescent – shape which makes it possible to see both the ends from the
+                centre of the beach. Featured in Matt Damon English Movie The Bourne Supremacy; it's another kind of
+                beach with Green Island; its definitely one of the places to be in. </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/goa/agonda beach.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Agonda Beach</h4> <br> <br><br>
+            <h5>
+                What is special about Agonda Beach?
+                Image result for Agonda Beach
+                Agonda beach is famous for its shining white sands, azure blue water and welcoming shacks. This
+                picturesque scene attracts a lot of tourists around the world. It is also one of the only four beaches
+                in Goa with nesting sites for Olive ridley sea turtles. <br>
+                Agonda Beach is open <br>
+                Sun - Sat 12:00 AM - 11:59 PM</h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/goa/baga-sea-beach.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Bagga beach</h4> <br> <br><br>
+            <h5>
+                Why is Baga Beach so famous? <br>
+                Image result for Baga beach
+                Baga Beach is quite famous for its commercial nightlife. The famous Tito's Lane has many bars, lounges,
+                and clubs like Club Tito, Cafe Mambo, Capetown Cafe, Cocktails and Dreams, and Cavala that contribute to
+                keeping the nightlife in Baga Beach, one of the best in Goa.. <br>
+                Is Baga Beach free? <br>
+                Visitors do not have to pay any entry fee for Baga Beach. Being a public beach, there is no price for
+                Baga Beach entrance. Baga Beach nightlife is famous for beach parties and a night market ideal for
+                shopping.</h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/goa/cavalossim beach.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Cavelossim Beach</h4> <br> <br><br>
+            <h5>
+                Why is Cavelossim beach famous for? <br>
+                Image result for Cavelossim Beach
+                What is Cavelossim beach famous for? The beach is extremely famous for its location and the adventure
+                watersports offered here in summers and winters. Several tourists come here to enjoy the wide array of
+                water sports such as jet skiing, kayaking, parasailing, Dolphin spotting and a lot more. <br>
+                Is Cavelossim Beach crowded? <br>
+                No Crowds, Nice & Clean, No Shacks as this is the time when we usually visit goa when there are no
+                crowds and we enjoy our family time in this prisitne beach a lot.</h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/goa/palolem-sea-beach.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Benaulim Beach</h4> <br> <br><br>
+            <h5>
+                Why is Benaulim beach famous?
+                Contemporary Benaulim is a popular seaside resort, renowned for its beautiful rice fields, balmy weather
+                and golden sand beaches. It also houses Goa's only Don Bosco Animation Centre. <br>
+                Can we swim in Benaulim beach? <br>
+                It is a safe beach for swimming. Nevertheless, don't restrict yourself to Benaulim Beach alone. There
+                are few other swim-friendly beaches in Goa, such as Cavelossim Beach, Palolem Beach, Agonda Beach,
+                Morjim Beach, Mardem Beach, Candolim Beach, and Ashwem Beach.</h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/goa/canadolim.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Candolim Beach</h4> <br> <br><br>
+            <h5>
+                Why is Candolim Beach famous?
+                Nonetheless the Candolim Beach is also famous for hosting India's biggest electronic music dance
+                festival, the Sunburn Festival, which is organized by Percept, an Entertainment, Media and
+                Communications conglomerate. <br>
+                Candolim is a census town in North Goa and is located in the Bardez taluka in the state of Goa, India.
+                It is situated just south of Calangute Beach and North of Sinquerim.
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/goa/varca beach.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Varca Beach</h4> <br> <br><br>
+            <h5>
+                Varca beach is about 2 kms south of Benaulim Beach in South Goa. The major attractions around here is
+                the Benaulim Beach, Margao etc. The Varca Beach is one tourist destination that is not so famous in the
+                Beach Capital of India Goa. The quiet resort is charming with the bountiful beauty of nature. </h5>
+        </div>
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/goa/calangute beach.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Calangute beach</h4> <br> <br><br>
+            <h5>
+                The Calangute Beach is one of the flagship beaches of Goa and is also famous for the various water
+                sports and activities it hosts. Attracting tourists from all parts, the water sports and activities
+                offered at the Calangute Beach include parasailing, water surfing, banana ride and jet-skiing </h5>
+        </div>
+
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/goa/Arambol beach.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Arambol Beach</h4> <br> <br><br>
+            <h5>
+                Why is Arambol Beach famous? <br>
+                Image result for Arambol Beach <br>
+                Arambol Beach is also famous for the sweet water lagoon or lake that is located at the end of the
+                adjacent beach i.e. Kalacha beach. It is accessible only on foot and its shallow waters are wonderfully
+                calm to swim in. The sand here is also known to have healing properties. </h5>
+        </div>
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/goa/morjim.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Morjim Beach</h4> <br> <br><br>
+            <h5>
+                Why is Morjim beach famous?
+                Located in Pernem district, Morjim is renowned as the nesting place for Olive Ridley turtles. During
+                1997-98, only 5 nests were located and protected on Morjim beach. The number increased to eight in
+                1998-99 and resulted in extension of the protected area on the beach. </h5>
+        </div>
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/goa/main dp.jpg.crdownload" alt="">
+            <div class="jaaneman"></div>
+            <h4>Mandrem Beach</h4> <br> <br><br>
+            <h5>
+               
+                Why is Mandrem Beach famous? <br>
+                Image result for Mandrem Beach 
+                Beautifully tucked between Ashwem and Arambol beaches in North Goa, Mandrem Beach is a serene beach that
+                offers calm and solitude altogether. The beach is covered with magnificent white sands and is lined with
+                palm trees all around its shoreline—no wonder why it is one of the most popular beaches in Goa. </h5>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footing1">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-black text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                            </p>
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India
+                                </a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                            <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>

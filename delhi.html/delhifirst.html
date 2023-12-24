@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+
+            padding: 0%;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgba(244, 220, 125, 0.486);
+        }
+
+       
+
+        .picstyle {
+            border: black solid 5px;
+            margin: 40px;
+            border-radius: 60px;
+            height: 20rem;
+            width: 20rem;
+            box-shadow: 4px 4px 5px rgba(68, 137, 239, 0.553);
+            transition: 0.3s;
+        }
+
+        h2 {
+            background-color: lightpink;
+            margin: 50px;
+            border: black solid 0.2rem;
+            border-radius: 50px;
+
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+            vertical-align: text-top;
+
+
+            text-shadow: 4px 4px #16e1de;
+
+            box-shadow: inset;
+            background-color: rgb(100, 169, 243);
+            transition: o.5rem;
+            text-align: center;
+        }
+
+        .box {
+            width: 25rem;
+            height: auto;
+            margin: 5px;
+            
+            border: 1px solid rgb(91, 91, 91);
+            box-shadow: 2px 2px 5px rgb(111, 111, 111);
+            transition: 0.3s;
+        }
+
+        .quot {
+            text-align: center;
+            text-emphasis-style: italic;
+            font-size: 2rem;
+            color: brown;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .firstpic {
+            border-radius: 1REM;
+            height: 40rem;
+            width: 78rem;
+            border: 1px solid rgb(91, 91, 91);
+            box-shadow: 2px 2px 5px rgb(111, 111, 111);
+            transition: 0.3s;
+
+        }
+
+        .toptext {
+            padding: 10PX;
+            background-color: aliceblue;
+            opacity: .8;
+            position: absolute;
+            left: 340px;
+            top: 250px;
+            border-radius: 2rem;
+
+        }
+
+        b {
+            color: black;
+            font-size: 3rem;
+        }
+
+
+        h3 {
+            padding: 10px;
+            font-size: 2rem;
+            text-align: center;
+            border: black solid 5px;
+            background-color: #0fc5e1c8;
+            border-radius: 20px;
+            margin: 2rem;
+            list-style-type: none;
+            text-decoration-style: none;
+        }
+
+
+        .parks {
+            margin-left: 12rem;
+            padding-right: 10rem;
+            text-align: center;
+            font-size: 3rem;
+            text-shadow: 2px 2px #0b0c0c;
+            font-weight: bold;
+
+        }
+
+        .part1 {
+
+
+            border-radius: 2rem;
+
+            height: 30rem;
+            width: 17rem;
+            box-shadow: 2px 2px 5px rgb(111, 111, 111);
+            transition: 0.3s;
+
+        }
+
+        .part2 {
+            border-radius: 2rem;
+
+            height: 30rem;
+            width: 17rem;
+            box-shadow: 2px 2px 5px rgb(111, 111, 111);
+            transition: 0.3s;
+
+        }
+
+
+        .parentpart1 {
+
+            margin-left: 5rem;
+
+            height: 40rem;
+            width: 23rem;
+
+
+
+        }
+
+        .blockbox1 {
+
+
+            height: 35rem;
+            width: 27rem;
+
+        }
+
+        .parentpart2 {
+
+
+
+            margin-left: 5rem;
+
+            height: 40rem;
+            width: 23rem;
+
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .box:hover {
+            transform: scale(1.015);
+
+        }
+
+        h3 {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #16e1de;
+        }
+
+        .topcontainer {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 5px;
+            
+
+        }
+
+        .breaker {
+            display: none;
+        }
+
+        .placesofdelhi {
+            display: flex;
+            position: relative;
+
+        }
+        p{
+            text-align: center;
+        }
+        .RELIGIOUS{
+
+            margin-left: 23rem;
+            padding-right: 5rem;
+            text-align: center;
+            font-size: 3rem;
+            text-shadow: 2px 2px #0b0c0c;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="#distination">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div>
+        <img class="firstpic" src="DP1.jpeg" alt="">
+        <h1 class="toptext">LET'S EXPLORE THE CAPITAL OF INDIA <BR> DELHI</BR></h1>
+    </div>
+
+
+    <p class="quot">---Delhi a Thriving, Cosmopolitan Metro, the City has much to Celebrate as it has already--- Reached
+        the
+        Milestone of Completing
+        <br> <b> ~~100~~ </b><br>
+        ---Years as a Capital---.
+    </p>
+    <div class="placesofdelhi">
+        <div class="parentpart1">
+            <img class="part1" src="PART 1.jpg" alt="">
+        </div>
+
+        <div class="blockbox1">
+            <a href=" #heritage_site_and_monuments">
+                <h3> Heritage And Monuments</h3>
+            </a>
+            <a href="#PARKS AND GARDENS OF DELHI">
+                <h3>Parks And Garden</h3>
+            </a>
+            <h3>Religious Places </h3>
+            <h3> Water Bodies </h3>
+            <h3>Museums</h3>
+            <h3>Art Galleries</h3>
+        </div>
+
+        <div class="parentpart2">
+            <img class="part2" src="PART 2.jpg" alt="">
+        </div>
+    </div>
+    <a id="heritage_site_and_monuments">
+        <P class="parks">Heritage And Monuments</P>
+    </a>
+    <div class="topcontainer">
+
+
+
+        <div class="box">
+            <a href="qutubminarpage.html">
+                
+                    <img class="picstyle" src="qutub-minar-2155776.jpg" alt="">
+                    <h2> QUTUB MINAR </h2>
+            </a>
+        </div>
+        <div class="box">
+            <a href="redfortpage.html">
+                
+                    <img class="picstyle" src="red-fort-2254704_1920.jpg" alt="">
+                    <H2>RED FORT</H2>
+            </a>
+        </div>
+        <div class="box">
+            <a href="/delhi.html/lotustemple.html"><img class="picstyle" src="temple-93446.jpg" alt="">
+                <h2>LOTUS TEMPLE</h2>
+            </a>
+        </div>
+
+
+
+
+
+
+        <p class="breaker"></p>
+
+
+
+
+        <div class="box">
+            <a href="/delhi.html/indiagatepage.html"> <img class="picstyle" src="india gate.jpg" alt="">
+                <h2> INDIA GATE </h2>
+            </a>
+        </div>
+        <div class="box">
+            <a href="/delhi.html/humayuntombpage.html"><img class="picstyle" src="humayun-tomb-2739352.jpg" alt="">
+                <H2>HUMAYUN TOMB</H2>
+            </a>
+        </div>
+        <div class="box">
+            <a href="/delhi.html/jantarmatar.html"><img class="picstyle" src="jantar-mantar-4527406.jpg" alt="">
+                <h2>JANTAR MANTAR</h2>
+            </a>
+        </div>
+
+
+
+
+        <p class="breaker"></p>
+
+
+        <div class="box">
+            <a href="/delhi.html/zoo.html"> <img class="picstyle" src="leopard-3229940.jpg" alt="">
+                <h2> ZOO </h2>
+            </a>
+        </div>
+        <div class="box">
+           <a href="/delhi.html/oldfort.html"> <img class="picstyle" src="oldfort-walls-178073.jpg" alt="">
+            <H2>OLD FORT</H2></a>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="hauz-Khas-fort-1-768x364.jpg" alt="">
+            <h2>HAUZ KHAS FORT</h2>
+        </div>
+
+
+
+        <p class="breaker"></p>
+
+        <div class="box">
+            <img class="picstyle" src="NATIONAL WAR MEMORIAL.jpg" alt="">
+            <h2> NATIONAL WAR MEMORIAL </h2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="safdarganj tomb.jpg" alt="">
+            <H2>SAFDARGANJ FORT</H2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="TUGHLAQABAD_FORT_BAOLI_1_-_Copy.jpg" alt="">
+            <h2>TUGHALQABAD FORT</h2>
+        </div>
+
+
+
+        <p class="breaker"></p>
+
+        <div class="box">
+            <img class="picstyle" src="agrasen ki baoli.jpg" alt="">
+            <h2> AGRASEN KI BAOLI </h2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="guru tegh bahadur memorial.jpg" alt="">
+            <H2>GURU TEGH BAHADUR MEMORIAL</H2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="Azad-Hind-Gram-32.jpg" alt="">
+            <h2>AZAD HIND GRAM</h2>
+        </div>
+
+
+
+        <p class="breaker"></p>
+        <a id="PARKS AND GARDENS OF DELHI">
+            <P class="parks">PARKS AND GARDENS OF DELHI</P>
+        </a>
+
+
+        <div class="box">
+            <img class="picstyle" src="garden-of-five-senses-delhi-entry-fee-timings-holidays-reviews-header.jpg"
+                alt="">
+            <h2> GARDEN OF FIVE SENSES </h2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="national-rose-garden7-featured.jpg" alt="">
+            <H2>NATIONAL ROSE PARK</H2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="lodhi garden.jpg" alt="">
+            <h2>LODHI GARDEN</h2>
+        </div>
+
+        <p class="breaker"></p>
+
+
+        <div class="box">
+            <img class="picstyle" src="Waste-to-Wonder-Park_1530319358-2.jpg" alt="">
+            <h2> WASTE TO WONDERS </h2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="nehru-park-1575373076.jpg" alt="">
+            <H2>NEHRU PARK</H2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="ROSHANARAGARDEN1(1).jpg" alt="">
+            <h2>ROSHAN ARA GARDEN</h2>
+        </div>
+
+        <p class="breaker"></p>
+
+
+
+        <div class="box">
+            <img class="picstyle" src="deer park.jpg" alt="">
+            <h2> DEER PARK </h2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="mughal garden.jpg" alt="">
+            <H2>MUGHAL GARDEN</H2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="central-park1-1.jpg" alt="">
+            <h2>CENTARAL PARK</h2>
+        </div>
+
+        <p class="breaker"></p>
+
+
+
+        <div class="box">
+            <img class="picstyle" src="buddha-jayanti-park-1575374926.jpg" alt="">
+            <h2> BUDDHA JAYANTI PARK </h2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="lodhi garden.jpg" alt="">
+            <H2>JAPANESE PARK</H2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="MILENNIUM PARK.jpg" alt="">
+            <h2>MILENNIUM PARK</h2>
+        </div>
+
+        
+
+        <P class="RELIGIOUS">RELIGIOUS PLACES</P> <br>
+
+        <p class="breaker"></p>
+
+        <div class="box">
+            <img class="picstyle" src="buddha-jayanti-park-1575374926.jpg" alt="">
+            <h2> BUDDHA JAYANTI PARK </h2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="lodhi garden.jpg" alt="">
+            <H2>JAPANESE PARK</H2>
+        </div>
+        <div class="box">
+            <img class="picstyle" src="MILENNIUM PARK.jpg" alt="">
+            <h2>MILENNIUM PARK</h2>
+        </div>
+
+    </div>
+
+
+
+</body>
+<div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India </a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+    </footer>
+    <!-- Footer -->
+</div>
+
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Lets Know india</title>
+    <style>
+        /* 
+
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+*/
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        /* 
+Reuseable code
+
+*/
+
+        .heading {
+            /* border: 1px solid red; */
+            max-width: 40rem;
+            margin: auto;
+            margin: 2rem auto;
+            position: relative;
+
+
+        }
+
+        .heading__text {
+            font-size: 2.5rem;
+            text-align: center;
+            font-weight: 500;
+            padding: .5rem 0;
+
+
+        }
+
+        .underline {
+
+            width: 10rem;
+            height: 5px;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            background-color: rgb(73, 72, 72);
+        }
+
+        .box__btn {
+            font-size: 1rem;
+            width: 100px;
+            color: white;
+            padding: .3rem .5rem;
+            border: none;
+            background-color: rgb(211, 137, 16);
+            cursor: pointer;
+        }
+
+        .box__btn:hover {
+            background-color: rgb(0, 98, 136);
+
+        }
+
+
+        /* ================== */
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .navbar {
+            background-color: black;
+            width: 80rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            z-index: 11111;
+
+        }
+
+        .nav-list {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list li a:hover {
+            color: grey;
+        }
+
+        .rightNav {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(13, 5, 5, 0.7) url('/Boat-ride-Varanasi-India-min-scaled.jpeg');
+            background-size: cover;
+            filter: brightness(80%);
+
+        }
+
+        .firstHalf {
+            height: 100vh;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 50%;
+            margin: auto;
+            height: 70%;
+        }
+
+        .firstHalf {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .secondHalf {
+            width: 30%;
+        }
+
+        .secondHalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+
+        }
+
+        .text-big {
+            font-size: 41px;
+        }
+
+        .text-small {
+            font-size: 18;
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+
+        .container {
+            /* border: 1px solid red; */
+            max-width: 70rem;
+            margin: auto;
+            height: 12rem;
+            margin-top: 2rem;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: .5rem;
+            border: 1px solid rgb(91, 91, 91);
+            box-shadow: 2px 2px 5px rgb(111, 111, 111);
+            transition: 0.3s;
+
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box__img {
+            width: 100%;
+        }
+
+        .firstheading {
+            /* border: 1px solid red; */
+            max-width: 40rem;
+            margin: auto;
+            margin: 2rem auto;
+            position: relative;
+
+
+        }
+
+        .firstheading__text {
+            font-size: 2.5rem;
+            text-align: center;
+            font-weight: 500;
+            padding: .5rem 0;
+
+
+        }
+
+        .firstunderline {
+
+            width: 10rem;
+            height: 5px;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            background-color: rgb(73, 72, 72);
+        }
+
+        .firstbox__btn {
+            font-size: 1rem;
+            width: 100px;
+            color: white;
+            padding: .3rem .5rem;
+            border: none;
+            background-color: rgb(211, 137, 16);
+            cursor: pointer;
+        }
+
+        .firstbox__btn:hover {
+            background-color: rgb(0, 98, 136);
+
+        }
+
+        .firstcontainer {
+            /* border: 1px solid red; */
+            max-width: 70rem;
+            margin: auto;
+            height: 40rem;
+            margin-top: 38rem;
+        }
+
+        .firstboxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .firstbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: .5rem;
+            border: 1px solid rgb(91, 91, 91);
+            box-shadow: 2px 2px 5px rgb(111, 111, 111);
+            transition: 0.3s;
+
+        }
+
+        .firstbox:hover {
+            transform: scale(1.05);
+        }
+
+        .firstbox__img {
+            width: 100%;
+        }
+
+        @media screen and (max-width:450px) {
+          #box{
+            width: 100%;
+            height: auto;
+          }
+          .heading__text{
+            text-align: center;
+          }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topmedia">
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <div class="logo"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+                <li><a href="/mainfirstpage.html">Home</a></li>
+                <li><a href="/delhi.html/index.html">Distination</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="rightNav">
+                <input type="search" name="search" id="search" placeholder="Search here...">
+                <button class="btn btn-sm">Search</button>
+            </div>
+        </nav>
+    </div>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Explore New Places,
+                    Adventure Awaits.</p>
+                <p class="text-small">"Travells isn't always pretty. It isn't always comfortble
+                    somtimes it hurts. It even breaks hurt, but that's Ok . The journey changes
+                    It should change you. It leaves marks on your memory, on your consciousness.
+                    you.on your hurt, and on your body. you take somthing with you hopefully, you
+                    leave somthing good behind"
+                </p>
+            </div>
+            <div class="secondHalf">
+                <img src="/delhi.html/LOGO PIC.jpg" alt="family image">
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="heading">
+            <h2 class="heading__text">Most Popualr Visited Place In India</h2>
+            <div class="underline">
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box" title="Delhi">
+                <img src="/delhi.html/red fort/shutterstock_1199337631_20200102114237.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>RedFort</h3>
+                    <a href="/delhi.html/redfortpage.html"> <button class="box__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="box" title="Goa">
+                <img src="/delhi.html/goa beach 2.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>GoaBeach</h3>
+                    <a href="/delhi.html/goabeach.html"> <button class="box__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="box" title="Rajasthan">
+                <img src="/delhi.html/india gate.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>INDIA GATE </h3>
+                    <a href="/delhi.html/indiagatepage.html"><button class="box__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="box" title="UttarPradesh">
+                <img src="/delhi.html/Taj-Mahal-Agra.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Tajmahal</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="WestBengal">
+                <img src="/delhi.html/Howrah_Bridge.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>HowrahBridge</h3>
+                    <a href="/delhi.html/howrahbridge.html"> <button class="box__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="box" title="Utrakhand">
+                <img src="/delhi.html/Dehradun.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Dehradun</h3>
+                    <a href="/delhi.html/dehradun.html"> <button class="box__btn">Visit</button> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="firstcontainer">
+        <div class="firstheading">
+            <h2 class="firstheading__text">Top 6 Most Visited States of India by Foreign Tourist</h2>
+            <div class="firstunderline">
+            </div>
+        </div>
+        <div class="firstboxes">
+            <div class="firstbox" title="Tamilnadu">
+                <img src="/delhi.html/tamil nadu/CHENNAI .jpg" alt="" class="firstbox__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Tamil Nadu</h3>
+                    <a href="/delhi.html/tamilnadufirstpage.html"> <button class="firstbox__btn">Visit</button> </a>
+                </div>
+            </div>
+            <div class="firstbox" title="Maharashtra">
+                <img src="/delhi.html/MAHARASTRA/maindp.jpg" alt="" class="firstbox__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Maharashtra</h3>
+                    <a href="/delhi.html/mahrashtramainpage.html"> <button class="firstbox__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="firstbox" title="Uttarpradesh">
+                <img src="/delhi.html/uttar pradesh/taj mahal.webp" alt="" class="firstbox__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Uttar Pradesh</h3>
+                    <a href="/delhi.html/uttarpradeshfirstpage.html"> <button class="firstbox__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="firstbox" title="Delhi">
+                <img src="/delhi.html/humayun-tomb-2739352.jpg" alt="" class="firstbox__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Delhi</h3>
+                    <a href="http://127.0.0.1:5500/delhi.html/delhifirst.html"><button
+                            class="firstbox__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="firstbox" title="WestBengal">
+                <img src="/delhi.html/west bangal/india-west-bengal-148317058835o.webp" alt="" class="firstbox__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>West Bengal</h3>
+                    <a href="/delhi.html/tamilnadufirstpage.html"><button class="firstbox__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="firstbox" title="Bihar">
+                <img src="/delhi.html/rajasthan/JAISALMER.jpg" alt="" class="firstbox__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Rajasthan</h3>
+                    <a href="/delhi.html/secondpageofrajasthan.html"> <button class="firstbox__btn">Visit</button> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 35rem;
+        }
+
+        h1 {
+
+            font-size: 5rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: ;
+            margin-right: ;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+            background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+        .maincontainer:nth-child(odd) {
+            background-color: rgb(222, 222, 21);
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/delhi.html/DEHRADUN/maldevta.jpg" alt="">
+        <div class="DAUSA1">
+            <h1></h1>
+        </div>
+    </div>
+    <h3>~~DEHRADUN~~</h3>
+    <h2>Sahasradhara is also as called ‘Thousand Fold Spring. It is a beautiful spot encircled by the Baldi river. If
+        you are planning to visit Dehradun, then you must visit this place.</h2>
+    <P>Situated in the Doon Valley with a backdrop of the Shivalik and Lesser Himalayas, Dehradun is one of the quaint
+        cities offering scenic delight. Known as Dehra during the British rule, this city became home to a lot of elite
+        institutions and schools like Forest Research Institute, Doon School, and Welham Schools for boys and girls.
+        Dehradun is now the capital city of Uttarakhand and is an ideal getaway for solo travelers, couples and families
+        alike. With comfortable hotels in Dehradun offering incredible views of the soaring mountains, the place
+        attracts tourists from across the country for a getaway..</P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/delhi.html/DEHRADUN/Sahastradhara1.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Sahastradhara</h4> <br> <br><br>
+            <h5>
+                Sahastradhara, also known as ‘Thousand Fold Spring’, is a beautiful place surrounded by caves and the
+                Baldi River. Known for its high sulfur content, the spring water is said to have medicinal values. Other
+                than this, the lime content in the spring water has given way to limestone outcrops and ridges. During
+                the monsoon season, the water comes thundering down the rocks, offering a magnificent view.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/DEHRADUN/Robber’s-Cave.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4> Robber’s Cave</h4> <br> <br><br>
+            <h5>
+                Also known as Guchu Pani, Robber’s Cave is a 600m-long cave with small waterfalls and a river flowing
+                inside it. It is said that during the British times, robbers used to treat this cave as a hideout, and
+                hence, the name. <br> <br>
+
+                Trivia: The river in the cave abruptly disappears at one spot and reappears from a point few meters
+                away.</h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/DEHRADUN/Tiger-waterfall.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Tiger Falls</h4> <br> <br><br>
+            <h5>
+                Tiger Falls, situated in the beautiful forests of Chakrata, offers pristine views of Mother Nature. With
+                an elevation of 312 m, this is one of the highest direct waterfalls in India. The waterfall culminates
+                into a beautiful pond, enabling tourists to have a good time with friends and family. Travelers can also
+                choose to trek around the area. Besides, tourists can also go canoeing, rappelling, and rafting in the
+                waters. <br> <br>
+
+                Entry Fee: Rs. 50 per person.</h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/DEHRADUN/Tapkeshawar-Temple.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4> Tapkeshawar Temple</h4> <br> <br><br>
+            <h5>
+                Situated on the banks of the Asan River, Tapkeshwar Temple is popular as the oldest Shiva temple in
+                Uttarakhand. The lingam inside this charming temple continuously receives water droplets from the
+                ceiling making it a beautiful spectacle. Further, the never-ending holy chants and ringing of bells make
+                the whole aura extremely devotional. <br>
+
+                Timings: 6 AM to 7 PM <br>
+                The cave temple was once resided by the great sage, Guru Dronacharya. .</h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/Tapovan1.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Tapovan</h4> <br> <br><br>
+            <h5>
+                With beautiful green surroundings and River Ganga flowing through it, Tapovan is an ideal location to
+                rest, meditate and seek spiritual strength. It is said that Guru Dronacharya did his penance at the
+                Tapovan temple here. Tourists can trek till the temple and immerse themselves in holy chants and ringing
+                bells. Undisputedly, Tapovan is ideal for those who come looking for peace and calmness in the
+                mountains. <br> <br>
+
+                Timings: 6 AM to 8 PM</h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/DEHRADUN/6.-lacchiwalla-dehradun.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Lachhiwala</h4> <br> <br><br>
+            <h5>
+                Now known as Nature Park, Lachhiwala is a collection of man-made pools where you can have a good time
+                with your friends and family. Flanked by Sal trees, it has a pleasant atmosphere like a forest; adding
+                to the charm of the place. Tourists can also indulge in trekking and bird-watching in the area. The
+                water in these pools is sourced from the Suswa River, flowing nearby. <br> <br>
+
+                Timings: Sunrise to Sunset
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/Mindrolling-Monastery.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4> Mindrolling Monastery</h4> <br> <br><br>
+            <h5>
+                The Buddha Temple, also known as Mindrolling Monastery, was founded in 1965 by His Eminence Kochen
+                Rinpoche and a small group of other monks in Tibet to preserve and spread Buddhist teachings and
+                culture. The Buddha Temple complex, one of the four Tibetan religious schools, was built in the Japanese
+                architectural style and has a 103-foot-tall statue of the Lord Buddha. Nyingma is the name of the temple
+                complex, whereas Kagyu, Sakya, and Geluk are the names of the schools housed there. There are statues of
+                Buddha and Guru Padmasambhava on all five of the temple’s levels, which rise to a height of
+                approximately 220 feet. To get a panoramic view of Doon Valley, climb the wooden stairs to the fourth
+                story and stand on the open circular observation platform. The temple is open all 7 days of the week.
+                <br> <br>
+
+                Timings: Summer and Winter Visiting Hours Vary
+            </h5>
+        </div>
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/Malsi-Deer-Park.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Malsi Deer Park</h4> <br> <br><br>
+            <h5>
+                Among the most popular Dehradun places to visit, Malsi Deer Park is a haven for wildlife lovers. This
+                peaceful home to herds of deer is a favorite spot for family outings and school picnics. Besides the
+                sleek spotted creatures, visitors can also capture several species of birds at Malsi Park. <br>
+
+                Location: Mussoorie Road <br>
+                Timings: 10 AM to 5 PM</h5>
+        </div>
+
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/forest research.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Forest Research Institute</h4> <br> <br><br>
+            <h5>
+                Are you interested in plants, birds, animals and other areas of forestry? Then make sure you visit
+                Dehradun’s Forest Research Institute. This popular institute in the field of forestry research was
+                established in 1906 and is known for its eye-catching colonial and Greco-Roman styles of architecture.
+                Although an educational institution, it is open to visitors as well. It houses 6 museums, displaying the
+                research on different areas in forestry. Surrounded by natural beauty, the institute attracts many
+                nature lovers and picnickers as well. <br>
+
+                Location: Chakarata Road, Indian Military Academy, Dehradun <br>
+                Timings: 9:00 AM to 5:30 PM; Monday to Friday (Closed on Saturday and Sunday) <br>
+                Entry Fee: INR 10 per person <br>
+                Ideal Duration: 2-3 hours</h5>
+        </div>
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/Shree-Prakasheshwar-Mahadev-Mandir.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Daat Kali Mandir</h4> <br> <br><br>
+            <h5>
+                A famous temple dedicated to Goddess Kali, Daat Kali Mandir is counted among the most important
+                religious places in Dehradun. It is believed that the flame in the temple has been burning continuously
+                since 1921. The temple witnesses a significant footfall throughout the year and is particularly visited
+                by those starting a new chapter in their lives. Apart from seeking blessings, you can also offer oil,
+                ghee, flour and other things to the Goddess. <br> <br>
+
+                Location: NH 72A, Dehradun-Shanranpur Highway, Ashkrodi, Uttarakhand <br>
+                Timings: 5:00 AM to 9:00 PM; 7 days a week <br>
+                Entry Fee: No entry fee <br>
+                Ideal Duration: 1 hour </h5>
+        </div>
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/Chetwoode-Hall-Dehradun-1.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Chetwoode Hall</h4> <br> <br><br>
+            <h5>
+                Set up in 1932, Chetwoode Hall is an important landmark of the Indian Military Academy (IMA) in
+                Dehradun. The significance of the building is such that it is depicted on the mementos of the IMA and
+                serves as a backdrop for the Passing Out Parade. Apart from housing the administrative headquarters of
+                IMA, the hall has a museum, computer labs, lecture halls and a café. <br>
+
+                Location: Indian Military Academy, Dehradun <br>
+                Timings: 10:00 AM to 1:00 PM; 7 days a week <br>
+                Entry Fee: No entry fee <br>
+                Ideal Duration: 1 hour</h5>
+        </div>
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/shikhar-fall-1.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Shikhar Falls</h4> <br> <br><br>
+            <h5>
+                Frequented by nature lovers and adventure seekers, Shikhar Falls is one of the most beautiful
+                attractions in Dehradun. The waterfall is surrounded by mountainous terrain, so you need to go for a
+                strenuous hike of about 1 km to reach the falls. And during this short hike, you will come across many
+                wildflowers, shallow pools, pretty birds, and butterflies, which add to the beauty of the area. If you
+                are a shutterbug, do remember to click some amazing photos here. And if you are a nature lover, you can
+                simply sit back and enjoy the mesmerizing views of the surroundings. <br>
+
+                Location: Kairwaan Gaon, Dumal Gaon, Uttarakhand <br>
+                Timings: 24×7 <br>
+                Entry Fee: No entry fee <br>
+                Ideal Duration: 1 hour</h5>
+        </div>
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/Rajaji-National-Park.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Rajaji National Park</h4> <br> <br><br>
+            <h5>
+                Nestled amidst the majestic Shivalik ranges, Rajaji National Park is a picturesque destination for
+                wildlife buffs and nature lovers. The national park is spread over an area of 820.20 square kilometres
+                and known for housing over 50 species of mammals and 300 species of birds. You can take a jeep or
+                elephant safari here and spot a range of fauna, including some endangered ones, such as the Asian
+                elephant, tiger, Himalayan black bear, wild cats and sloth bear. If you love birdwatching, keep your
+                binoculars and cameras handy for some rare sightings. <br> <br>
+
+                Location: Motichur Range, Uttarakhand <br>
+                Timings: 6:00 AM to 9:00 AM; 3:00 PM to 6:00 PM (Park remains open from 15th November to 15th June) <br>
+                Entry Fee: <br>
+                Indians: INR 150 per person <br>
+                Foreigners: INR 600 per person <br>
+                Extra charges for vehicles and cameras <br>
+                Ideal Duration: 3 hours</h5>
+        </div>
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/Tiger-waterfall.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Tiger View Jungle Camp</h4> <br> <br><br>
+            <h5>
+                Around 10 km from Dehradun and situated in Goolar Khalla village, Tiger View Jungle Camp is yet another
+                popular attraction among wildlife enthusiasts. It is particularly known for protecting the endangered
+                Indian tiger. Besides camping in the wilderness, you can go for a jungle safari here to spot a variety
+                of flora and fauna. The natural beauty of the place will transport you to a different world, away from
+                the urban hustle-bustle. Spotting majestic tigers in their natural habitat will make for a unique
+                experience altogether. <br> <br>
+
+                Location: Goolar Khalla, Dehradun <br>
+                Timings: 9:00 AM to 5:00 PM; 7 days a week <br>
+                Entry Fee: Jeep charges for jungle safari <br>
+                Ideal Duration: 3 hours</h5>
+        </div>
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/DEHRADUN/maldevta.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Maldevta</h4> <br> <br><br>
+            <h5>
+                The outskirts of Dehradun boast some wonderful attractions too, and Maldevta is one of them. It is
+                situated in Raipur district and is about 18 km from the main city. Maldevta is known for its abundant
+                natural beauty and perfect for you if you are looking to unwind and enjoy different recreational
+                activities, like swimming, biking, sightseeing, birdwatching, camping and photography. While the mighty
+                Himalayas serve as the perfect backdrop, the meandering Song River and abundant flora add to the beauty
+                of the landscape. <br> <br>
+
+                Location: Maldevta Road, Raipur, Uttarakhand <br>
+                Timings: 10:00 AM to 6:00 PM; 7 days a week <br>
+                Entry Fee: No entry fee <br>
+                Ideal Duration: 2-3 hours</h5>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footing1">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-black text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                            </p>
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India
+                                </a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                            <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>

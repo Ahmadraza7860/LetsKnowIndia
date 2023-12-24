@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            color: rgb(254, 211, 154);
+        }
+
+        .maincontainer {
+            display: flex;
+            flex-flow: row wrap;
+            margin-left:
+                margin-right:
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+
+        .container {
+            position: relative;
+            width: 50%;
+
+
+        }
+
+        .image {
+            opacity: 0.8;
+            display: block;
+            width: 27rem;
+            height: 20rem;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            border: rgb(250, 249, 249) solid 2px;
+        }
+
+        .middle {
+            transition: .5s ease;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.5;
+            color: #7cf2e0;
+        }
+
+        .middle:hover {
+            transition: 0.5;
+
+        }
+
+
+
+        .container:hover {
+            opacity: 1;
+        }
+
+        button {
+            border-radius: 10px;
+            background-color: #ebebeb;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            padding: 16px 32px;
+            opacity: 0.8;
+            transition: 0.3;
+        }
+
+        h1 {
+            font-family: fantasy;
+            margin: 5rem;
+            padding: 20px;
+            font-size: 50px;
+            text-align: center;
+            color: #074bf5;
+            margin-bottom: 2rem;
+
+            text-decoration: underline rgb(208, 175, 12) 5px;
+
+        }
+
+        h2 {
+            font-family: cursive;
+            margin-bottom: 2rem;
+            font-size: 25px;
+            text-align: center;
+            color: #171513;
+
+        }
+
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+            color: white;
+        }
+        
+        .uppermain {
+            display: flex;
+            margin: 2rem;
+        }
+
+        .uppersecond {
+            height: 15rem;
+            width: 15rem;
+            margin-top: 5rem;
+        }
+        .rightside {
+            width: 12rem;
+            height: 15rem;
+            float: right;
+            box-shadow: 5rem;
+            border: pink solid 5px;
+            border-radius: 10px;
+        }
+
+        .leftside {
+            width: 12rem;
+            height: 15rem;
+            float: left;
+            box-shadow: 5rem;
+            border: pink solid 5px;
+            border-radius: 10px;
+
+        }
+        h5 {
+            font-size: 25px;
+            color: black;
+            text-align: center;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        h1 {
+            font-family: fantasy;
+
+            padding: 15px;
+            font-size: 40px;
+            text-align: center;
+            color: #040864;
+            margin-bottom: 2rem;
+
+            text-decoration: underline rgb(208, 175, 12) 5px;
+
+        }
+
+        h2 {
+            font-family: cursive;
+            margin-bottom: 5rem;
+            font-size: 12px;
+            text-align: center;
+            color: #171513;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="#distination">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="uppermain">
+        <div class="uppersecond">
+            <img class="leftside" src="/delhi.html/uttar pradesh/left side image.jpg" alt="">
+        </div>
+        <div class="uppersecond1">
+            <h1>~~Welcome to Uttarpradesh~~ </h1>
+            <h5>हसरते बनारस,
+                बसरते बस्ती,
+                सुरमयी है श्रावस्ती,
+                और कातिलाना लखनऊ।</h5> <br> <br>
+
+            <H2> लखनऊ की गलियों का कुछ इतिहास ही पुराना है
+                हमसे पूछो हमने इसे बहुत करीब से जाना है
+                जितनी प्यारी बोली है उतना ही कड़क स्वभाव है
+                मुस्कुराइए आप लखनऊ में हैं,
+                यही हमारे स्वागत करने का अंदाज है.</H2>
+
+        </div>
+        <div class="uppersecond">
+            <img class="rightside" src="/delhi.html/uttar pradesh/rightside image.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="maincontainer">
+
+        <div class="container">
+            <img src="/main states pic/hero9.jpg" alt="Avatar" class="image" Style="width:100%">
+            <div class="middle">
+                <a href="/delhi.html/rajasthan/dausa.html">
+                    <div><a href="/delhi.html/uttar pradesh/agra uttarpradesh.html"><button>Agra</button></a> </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="/main states pic/hero21.jpg" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"><a
+                        href="/delhi.html/uttar pradesh/luckhnow uttar pradesh.html"><button>Lukhnow</button> </a></div>
+                <div></div>
+            </div>
+        </div>
+
+        <p class="breaker"></p>
+
+
+
+
+
+
+        <div class="container">
+            <img src="/main states pic/hero22.jpg" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"><a
+                        href="/delhi.html/uttar pradesh/mathura uttarpradesh.html"><button>Mathura</button></a></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="/main states pic/hero23.jpg" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"><a
+                        href="/delhi.html/uttar pradesh/mathura uttarpradesh.html"><button>Vrindavan</button></a> </div>
+            </div>
+        </div>
+
+        <p class="breaker"></p>
+
+
+
+
+
+
+
+        <div class="container">
+            <img src="/main states pic/hero24.jpg" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"><a href="/delhi.html/uttar pradesh/up_Allahabad.html"><button>Allahabad</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="/main states pic/hero25.jpg" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"><a href="/delhi.html/uttar pradesh/varanasi uttar pradesh.html"><button>Varanasi</button></a></div>
+            </div>
+        </div>
+
+        <p class="breaker"></p>
+
+
+
+
+
+
+        <div class="container">
+            <img src="/main states pic/hero26.jpg" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"><button>Jhansi</button></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="/main states pic/hero27.jpg" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"><a href="/delhi.html/uttar pradesh/up_Ayodhya.html"> <button>Ayodha</button></a> </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="/main states pic/hero28.webp" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"><a href="/delhi.html/uttar pradesh/up_Allahabad.html"> <button>Fatehpur Sikri</button> </a></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="/main states pic/hero29.webp" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"><a href="/delhi.html/uttar pradesh/up_Ayodhya.html"> <button>Sarnath</button></a> </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

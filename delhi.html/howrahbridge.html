@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+
+            padding: 0%;
+            margin: 1px;
+        }
+
+        .form-inline {
+            position: absolute;
+            right: 2rem;
+
+        }
+
+        .dpimage {
+            height: 40rem;
+            width: 79rem;
+            box-shadow: 10px;
+            border-radius: 5px;
+
+        }
+
+        h2 {
+            background-color: antiquewhite;
+            margin: 15px;
+            font-weight: 700;
+
+            border-bottom: 5px solid rgb(15, 13, 13);
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        .span1 {
+            font-size: 4rem;
+            font-weight: 150px;
+
+        }
+
+        h6 {
+            background-color: rgba(240, 248, 255, 0.301);
+            transition: .5;
+            position: absolute;
+            margin-top: 19rem;
+            font-size: 25px;
+            font-weight: 700;
+            color: aliceblue;
+
+        }
+
+        .firstclass {
+            display: flex;
+        }
+
+        .textimage {
+            margin-right: 20px;
+            margin: 10px;
+            float: left;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 8px;
+            box-shadow: 10px;
+            border: 5px solid wheat;
+        }
+
+        .photogallery {
+            height: 15rem;
+            width: 10rem;
+
+        }
+
+        .galley {
+            display: flex;
+            align-items: center;
+            margin-left: 15rem;
+        }
+
+        h4 {
+            margin: 20px;
+            font-weight: 500;
+            color: burlywood;
+        }
+
+        h3 {
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        .boxxx {
+            margin: 5px;
+            padding: 5px;
+            border: 2px;
+            margin-top: 5rem;
+        }
+
+        .footing1 {
+            margin-top: 12rem;
+        }
+
+        .subhashimage {
+
+            margin-right: 20px;
+            margin: 10px;
+            float: right;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 8px;
+            box-shadow: 10px;
+            border: 5px solid wheat;
+
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        a {
+            color: black;
+        }
+
+        .box:hover {
+            transform: scale(1.015);
+
+        }
+
+        body {}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div class="firstclass">
+        <img class="dpimage" src="/delhi.html/kolkata/howrah/main dp.jpg" alt="">
+        <h6><em><span class="span1"> Howrah Bridge</span><br> The India Gate (formerly known as the All India War
+                Memorial)
+                is a war memorial located near the Rajpath on the eastern edge of the "ceremonial axis" of New Delhi,
+                formerly called duty path </em></h6>
+    </div>
+
+    <div class="boxxx">
+        <h2>Howrah Bridge</h2><br>
+        <h3>The Howrah Bridge is a balanced cantilever bridge over the Hooghly River in West Bengal. Commissioned in
+            1943, the bridge was originally named the New Howrah Bridge, because it replaced a pontoon bridge at
+            the same location linking the cities of Howrah and Kolkata (Calcutta). On 14 June 1965, it was renamed
+            Rabindra Setu after the great Bengali poet Rabindranath Tagore, who was the first Indian and Asian Nobel
+            laureate. It is still popularly known as the Howrah Bridge. <br> <br>
+
+            The bridge is one of four on the Hooghly River and is a famous symbol of Kolkata and West Bengal. The other
+            bridges are the Vidyasagar Setu (popularly called the Second Hooghly Bridge), the Vivekananda Setu and the
+            relatively new Nivedita Setu. It carries a daily traffic of approximately 100,000 vehicles and possibly
+            more than 150,000 pedestrians, easily making it the busiest cantilever bridge in the world. The
+            third-longest cantilever bridge at the time of its construction,[14] the Howrah Bridge is currently the
+            sixth-longest bridge of its type in the world.
+    </div>
+    <div>
+        <h2>Photo gallery</h2>
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/howrah-1332650_1920.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/howrah-bridge-2964776_1920.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/howrah-bridge-7520398_1920.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/howrah_bridge01.png" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/kolkata-4049913_1920.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="galley">
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/princep-ghat-4764716_1920.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/rowing-7410640_1920.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/rowing-7410640_1920.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/travel-2986080_1920.jpg" alt="">
+            </div>
+            <div>
+                <img class="photogallery" src="/delhi.html/kolkata/howrah/howrah-bridge-7520398_1920.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="boxxx">
+            <h2>History</h2>
+            <img class="textimage" src="/delhi.html/kolkata/howrah/construction.jpg" alt="">
+            <h3>In 1862, the Government of Bengal asked George Turnbull, chief engineer of the East Indian Railway
+                Company to study the feasibility of bridging the Hooghly River. He had recently established the
+                company's rail terminus in Howrah. He reported on 19 March, with large-scale drawings and estimates,
+                that: <br> <br>
+
+                The foundations for a bridge at Calcutta would be at a considerable depth and cost because of the depth
+                of the mud there. <br>
+                The impediment to shipping would be considerable. <br>
+                A good place for the bridge was at Pulta Ghat "about a dozen miles north of Calcutta" where a "bed of
+                stiff clay existed at no great depth under the river bed". <br>
+                A suspended-girder bridge of five spans of 401 feet (122 m) and two spans 200 feet (61 m) would be
+                ideal.
+
+
+                <H4>Pontoon bridge</H4>
+                <h3>
+                    In view of the increasing traffic across the Hooghly river, a committee was appointed in 1855–56 to
+                    review alternatives for constructing a bridge across it.[17] The plan was shelved in 1859–60, to be
+                    revived in 1868, when it was decided that a bridge should be constructed and a newly appointed trust
+                    vested to manage it. The Calcutta Port Trust was founded in 1870,[9] and the Legislative department
+                    of the then Government of Bengal passed the Howrah Bridge Act in the year 1871 under the Bengal Act
+                    IX of 1871,[9][17] empowering the lieutenant-governor to have the bridge constructed with Government
+                    capital under the aegis of the Port Commissioners.</h3>
+            </h3>
+        </div>
+
+        <div class="boxxx">
+            <h2>Plans for a new bridge</h2>
+            <img class="subhashimage" src="/delhi.html/kolkata/howrah/kolkata-4049913_1920.jpg" alt="">
+            <h3>In 1906[8] the Port Commission appointed a committee headed by R.S. Highet, chief engineer, East Indian
+                Railway and W.B. MacCabe, chief engineer, Calcutta Corporation. They submitted a report stating that[9]
+                <br>
+                Bullock carts formed the eight - thirteenths of the vehicular traffic (as observed on 27 August 1906,
+                the heaviest day's traffic observed in the port of Commissioners 16 days' Census of the vehicular
+                traffic across the existing bridge). The roadway on the existing bridge is 48 feet wide except at the
+                shore spans where it is only 43 feet in roadways, each 21 feet 6 inches wide. The roadway on the new
+                bridge would be wide enough to take at least two lines of vehicular traffic and one line of trams in
+                each direction and two roadways each 30 feet wide, giving a total width of 60 feet of road way which are
+                quite sufficient for this purpose [...] <br> <br>
+                The traffic across the existing floating bridge Calcutta & Howrah is very heavy and it is obvious if the
+                new bridge is to be on the same site as the existing bridge, then unless a temporary bridge is provided,
+                there will be serious interruptions to the traffic while existing bridge is being moved to one side to
+                allow the new bridge to be erected on the same site as the present bridge.
+            </h3>
+
+
+            </h3>
+        </div>
+
+
+        <div class="boxxx">
+            <h2>Construction</h2>
+            <img class="textimage" src="/delhi.html/kolkata/howrah/construction.jpg" alt="">
+            <h3>
+                The bridge does not have nuts and bolts,[11][18] but was formed by riveting the whole structure. It
+                consumed 26,500 tons of steel, out of which 23,000 tons of high-tensile alloy steel, known as Tiscrom,
+                were supplied by Tata Steel.[8][19] The main tower was constructed with single monolith caissons of
+                dimensions 55.31 m × 24.8 m[5][20] with 21 shafts, each 6.25 metre square.[21] The Chief Engineer of the
+                Port Trust, Mr. J. McGlashan, wanted to replace the pontoon bridge, with a permanent structure, as the
+                present bridge interfered with north–south river traffic. Work could not be started as World War I
+                (1914–1918) broke out. Then in 1926 a commission under the chairmanship of Sir R. N. Mukherjee
+                recommended a suspension bridge of a particular type to be built across the River Hoogly. The bridge was
+                designed by one Mr. Walton of M/s Rendel, Palmer & Triton. The order for construction and erection was
+                placed on M/s.Cleveland Bridge & Engineering Company in 1939. Again World War II (1939–1945) intervened.
+                All the steel that was to come from England were diverted for war effort in Europe. Out of 26,000 tons
+                of steel, that was required for the bridge, only 3000 tons were supplied from England. In spite of the
+                Japanese threat, the then (British) government of India pressed on with the construction. Tata Steel
+                were asked to supply the remaining 23,000 tons of high tension steel. The Tatas developed the quality of
+                steel required for the bridge and called it Tiscom. The entire 23,000 tons was supplied in time. The
+                fabrication and erection work was awarded to a local engineering firm of Howrah: the Braithwaite, Burn &
+                Jessop Construction Co. The two anchorage caissons were each 16.4 m by 8.2 m, with two wells 4.9 m
+                square. The caissons were so designed that the working chambers within the shafts could be temporarily
+                enclosed by steel diaphragms to allow work under compressed air if required.The caisson at Kolkata
+                side was set at 31.41 m and that at Howrah side at 26.53 m below ground level. </h3>
+        </div>
+
+
+
+        </div>
+
+</body>
+<div class="footing1">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India </a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+    </footer>
+    <!-- Footer -->
+</div>
+
+</html>

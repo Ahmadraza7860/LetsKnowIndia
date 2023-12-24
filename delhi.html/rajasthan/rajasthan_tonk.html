@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 35rem;
+        }
+
+        h1 {
+
+            font-size: 5rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: ;
+            margin-right: ;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+            background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+        .maincontainer:nth-child(odd) {
+            background-color: rgb(222, 222, 21);
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="img/logo.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/delhi.html/rajasthan/tonk/main.jpg" alt="">
+        <div class="DAUSA1">
+            <h1></h1>
+        </div>
+    </div>
+    <h3>TONK</h3>
+    <h2>RENOWNED FOR OLD HAVELIS AND MOSQUES</h2>
+    <P>A small town near the city of Jaipur, Tonk is one of the most interesting places in Rajasthan and is renowned
+        for its old havelis and mosques. This elegant town of Jaipur was once ruled by the Pathans of Afghanistan. The
+        ancient town takes pride in its beautiful architectural wonders, established during the Mughal era. The Nawab of
+        Tonk was very fond of literature and built a large library of Persian and Arabic manuscripts. Founded in the
+        17th century, the town of Tonk serves as a host to several mansions, mosques and British colonial buildings.
+        This cross-cultural town is a mixture of Rajput buildings and Muslim architecture, which sets this town apart
+        from others. Rich in cultural heritage and magnificent structures, Tonk attracts tourists from all over the
+        world. <br> <br> <br>
+
+        This historic city formed a part of Harsha Vardhan's empire during which the Chinese traveller Fa-Hien visited
+        India. The King of Jaipur, Raja Man Singh conquered Tari and Tokra Janpad, during the Akbar regime. 12 villages
+        of Tokra Janpad were given away to Bhola Brahmin in the year 1643. Later, the name 'Tonk' was given to these
+        twelve villages by Bhola. Connected to the Bairath culture and civilization, Tonk has a rich historical
+        backdrop. The modern town of Tonk was founded by Nawab Amir Khan. Formerly a princely state, it became a part of
+        Rajasthan in 1948. Tonk is often described as Rajasthan ka Lucknow, Adab ka Gulshan, Romantic poet Akhtar
+        Shreerani ki Nagri, Meethe Kharboojo ka Chaman and Hindu Muslim Ekta ka Maskan. A historical town of
+        archaeological significance, Tonk is an absolute delight for any tourist who visits this town.</P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/tonk/SUNEHRI KOTHI.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>SUNEHRI KOTHI</h4> <br> <br><br>
+            <h5>
+                The main attraction of Tonk is the 19th century Sunehri Kothi or the Golden Mansion, situated near Bada
+                Kuan on Najar Bagh Road. The building seems to be rugged and ordinary from its exteriors but a glimpse
+                of its royal golden coloured interiors does absolute justice to its name. Sheesh Mahal, or the glass
+                hall of Sunehri Kothi, is adorned with the
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/tonk/THE ARABIC AND PERSIAN RESEARCH INSTITUTE.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>THE ARABIC AND PERSIAN RESEARCH INSTITUTE</h4> <br> <br><br>
+            <h5>
+                The Arabic and Persian Research Institute Rajasthan, Tonk is located in the heart of the Tonk city in
+                the valley of two historical hills of Rasiya and Annapoorna. The Institute has a beautiful Art gallery,
+                started in the year 2002, with an impressive display of magnificent arts and beautiful </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/tonk/HAATHI BHATA.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>HAATHI BHATA</h4> <br> <br><br>
+            <h5>
+                Situated around 20-30 kilometres from the Tonk- Sawai Madhopur Highway is the Hathi Bhata. Carved out
+                from a single stone, as the name suggests, it is a magnificent elephant, and quite a popular tourist
+                attraction. Constructed by Ram Nath Slat during the reign of Sawai Ram Singh, this monument bears an
+                inscription that narrates the story of Nala and Damayanti.</h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/tonk/BISALDEO TEMPLE.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>BISALDEO TEMPLE</h4> <br> <br><br>
+            <h5>
+                Bisalpur, located around 60-80 kilometres from Tonk, was founded by the Chahamana ruler Vigraharaja IV
+                in 12th century A.D. Bisalpur is considered very important due to the temple of Gokarnesvara, also known
+                as Bisal Deoji’s temple. It was constructed by Vigraharaja IV, who was an ardent devotee of Gokarna. The
+                inner sanctum of the temple enshrines a Shiva linga. The temple has a hemispherical dome, supported on
+                eight tall pillars sporting floral carvings. </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/tonk/HADI RANI BAORI.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>HADI RANI BAORI</h4> <br> <br><br>
+            <h5>
+                This stepwell is believed to have been built in the 12th century. It is rectangular on plan with
+                double-storeyed corridors on the western side. Each of these corridors is flanked with an arched
+                doorway. Images of Brahma, Ganesa and Mahishasuramardini are enshrined in niches on the lower storeys.
+                Some scenes of the Bollywood movie Paheli, starring superstars Amitabh Bachchan and Shah Rukh Khan were
+                shot here. This step well is about a 2 hour drive from Tonk. </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/tonk/JAMA MASJID.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>JAMA MASJID</h4> <br> <br><br>
+            <h5>
+                As one of the largest mosques in India, Jama Masjid in Tonk makes for an imposing sight, and is a great
+                example of the great Mughal architectural style from a bygone era. The construction of Jama Masjid was
+                started by Nawab Amir Khan, the first Nawab of Tonk. The construction of the mosque was completed during
+                the reign of Nawab Wzirudhoula . While golden paintings and Meenakari adorn the walls inside, enhancing
+                the intrinsic beauty of the mosque, the outside is easily recognizable with four massive minars that are
+                visible from afar, all of which combine to characterize its delightful intricacy.
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/tonk/BISALPUR DAM.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>BISALPUR DAM</h4> <br> <br><br>
+            <h5>
+                Recognized as the lifeline of the state-capital, Jaipur, the Bisalpur Dam is a gravity dam constructed
+                on the River Banas, near Deoli in Tonk district of Rajasthan.The construction of the dam was completed
+                in the year 1999, and since then it has acted as an important source of water to several regions in the
+                state. The Bisalpur Dam not only supplies water around half the areas under the Jaipur Municipal
+                Corporation, but also to the districts of Sawai Madhopur, Ajmer and Tonk. Like you can see more than 100
+                type of birds species and more than 50 cold water fish species here. One can also enjoy boating and
+                other water Sports activities here. Bisalpur Forest Sanctuary runs around this dam to explore the
+                wildlife in surrounding areas. </h5>
+        </div>
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/tonk/CLOCK TOWER.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>CLOCK TOWER</h4> <br> <br><br>
+            <h5>
+                The Clock Tower, locally known as Ghanta Ghar, finds its name amongst the most historical places of
+                Tonk. Built by Mohammed Sadat Ali Khan, the Nawab of Tonk, its historical significance is one-of-a-
+                kind. If the story by the locals is to be believed, there was an epidemic illness called as ‘Haiza’ way
+                back in the year 1936. This tragic time made the nawab distribute medicines to those who suffered from
+                it. In the end, the money that was collected in the process was used to build this iconic clock tower.
+                There are always certain events organised in front of the tower where you can witness the true vibrancy
+                of the town of Tonk. Visit the tower, especially in the night, to dive head-first into its intriguing
+                history. </h5>
+        </div>
+
+
+
+       
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footing1">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-black text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                            </p>
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India
+                                </a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                            <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+        
+    <title>Lets Know india</title>
+    <style>
+        /* 
+
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+*/
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        /* 
+Reuseable code
+
+*/
+
+        .heading {
+            /* border: 1px solid red; */
+            max-width: 40rem;
+            margin: auto;
+            margin: 2rem auto;
+            position: relative;
+
+
+        }
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+
+        .heading__text {
+            font-size: 2.5rem;
+            text-align: center;
+            font-weight: 500;
+            padding: .5rem 0;
+
+
+        }
+
+        .underline {
+
+            width: 10rem;
+            height: 5px;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            background-color: rgb(73, 72, 72);
+        }
+
+        .box__btn {
+            font-size: 1rem;
+            width: 100px;
+            color: white;
+            padding: .3rem .5rem;
+            border: none;
+            background-color: rgb(211, 137, 16);
+            cursor: pointer;
+        }
+
+        .box__btn:hover {
+            background-color: rgb(0, 98, 136);
+
+        }
+
+
+        /* ================== */
+       
+
+        
+
+        .navbar {
+            width: 80rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+          
+
+        }
+
+        .nav-list {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list li a:hover {
+            color: grey;
+        }
+
+        .rightNav {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.7) url('/delhi.html/red-fort-2254704_1920.jpg');
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .firstHalf {
+            height: 100vh;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 50%;
+            margin: auto;
+            height: 70%;
+        }
+
+        .firstHalf {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .secondHalf {
+            width: 30%;
+        }
+
+        .secondHalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+
+        }
+
+        .text-big {
+            font-size: 41px;
+        }
+
+        .text-small {
+            font-size: 18;
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+
+        .container {
+            /* border: 1px solid red; */
+            max-width: 70rem;
+            margin: auto;
+            height: 12rem;
+            margin-top: 2rem;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: .5rem;
+            border: 1px solid rgb(91, 91, 91);
+            box-shadow: 2px 2px 5px rgb(111, 111, 111);
+            transition: 0.3s;
+
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box__img {
+            width: 100%;
+        }
+
+        .firstheading {
+            /* border: 1px solid red; */
+            max-width: 40rem;
+            margin: auto;
+            margin: 2rem auto;
+            position: relative;
+
+
+        }
+
+        .firstheading__text {
+            font-size: 2.5rem;
+            text-align: center;
+            font-weight: 500;
+            padding: .5rem 0;
+
+
+        }
+
+        .firstunderline {
+
+            width: 10rem;
+            height: 5px;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            background-color: rgb(73, 72, 72);
+        }
+
+        .firstbox__btn {
+            font-size: 1rem;
+            width: 100px;
+            color: white;
+            padding: .3rem .5rem;
+            border: none;
+            background-color: rgb(211, 137, 16);
+            cursor: pointer;
+        }
+
+        .firstbox__btn:hover {
+            background-color: rgb(0, 98, 136);
+
+        }
+
+       
+
+        .firstboxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .firstbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: .5rem;
+            border: 1px solid rgb(91, 91, 91);
+            box-shadow: 2px 2px 5px rgb(111, 111, 111);
+            transition: 0.3s;
+
+        }
+
+        .firstbox:hover {
+            transform: scale(1.05);
+        }
+
+        .firstbox__img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo1"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="#distination">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+   
+    <div>
+        <div class="heading">
+            <h2 class="heading__text">Incridible States of India</h2>
+            <div class="underline">
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box" title="Delhi">
+                <img src="/main states pic/hero8.jpg.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>delhi</h3>
+                    <a href="/delhi.html/delhifirst.html"> <button class="box__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="box" title="Goa">
+                <img src="/main states pic/goa-2.jpg" alt=""
+                    class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Goa</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Rajasthan">
+                <img src="/main states pic/hero4.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Rajasthan</h3>
+                   <a href="/delhi.html/secondpageofrajasthan.html"> <button class="box__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="box" title="UttarPradesh">
+                <img src="/main states pic/hero9.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Uttar Pradesh</h3>
+                   <a href="/delhi.html/uttarpradeshfirstpage.html"> <button class="box__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="box" title="WestBengal">
+                <img src="/main states pic/hero10.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>West-Bangal</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Utrakhand">
+                <img src="/main states pic/hero11.jfif" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Utrakhand</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+            <div class="box" title="Maharastra">
+                <img src="/main states pic/hero13.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Maharastra</h3>
+                   <a href="/delhi.html/mahrashtramainpage.html"> <button class="box__btn">Visit</button></a>
+                </div>
+            </div>
+            <div class="box" title="Gujrat">
+                <img src="/main states pic/Gujrat.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Gujrat</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Keral">
+                <img src="/main states pic/kerala.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Keral</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+            <div class="box" title="Andhra Pradesh">
+                <img src="/main states pic/char minar.webp" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Andhra Pradesh</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Arunachal Pradesh">
+                <img src="/main states pic/arunachal-pradesh.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Arunachal Pradesh</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Bihar">
+                <img src="/main states pic/hero14.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Bihar</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+            <div class="box" title="Jharkhand">
+                <img src="/main states pic/jharkhand.webp" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Jharkhand</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Madhya Pradesh">
+                <img src="/main states pic/Madhya-Pradesh1.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Madhya pradesh</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Odisha">
+                <img src="/main states pic/odhisha.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Odisha</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+            <div class="box" title="Chhattisgadh">
+                <img src="/main states pic/chhatisgadh.webp" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Chhattisgadh</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Himachal pradesh">
+                <img src="/main states pic/hero15.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Himachal Pradesh</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Punjab">
+                <img src="/main states pic/Punjab.webp" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Punjab</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+            <div class="box" title="Haryana">
+                <img src="/main states pic/Haryana.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Haryana</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="chandhigardh">
+                <img src="/main states pic/chandigadh.webp" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>chandhigardh</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Lakshdweep">
+                <img src="/main states pic/Lakshdweep.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Lakshdweep</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+            <div class="box" title="Leh & Laddakh">
+                <img src="/main states pic/laddakh.webp" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Leh & Laddakh</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Manipur">
+                <img src="/main states pic/Manipur.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Manipur</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Mizoram">
+                <img src="/main states pic/Mizoram.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Mizoram</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+            <div class="box" title="Meghalay">
+                <img src="/main states pic/meghalaya-1.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Meghalay</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Nagaland">
+                <img src="/main states pic/Nagalang.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Nagaland</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Jammu & Kashmir">
+                <img src="/main states pic/jammu-and-kashmir.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Jammu & Kashmir</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+
+            <div class="box" title="Tamil Nadu">
+                <img src="/main states pic/TAMIL-NADU1.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Tamil Nadu</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Tripura">
+                <img src="/main states pic/Tripura.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Tripura</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Daman & Deu">
+                <img src="/main states pic/dadra-and-nagar-haveli.webp" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Daman & Deu</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+
+            <div class="box" title="Andaman Nicobar">
+                <img src="/main states pic/A & N.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Andaman Nicobar</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Pudduchery">
+                <img src="/main states pic/pudducherry.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Pudduchery</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+            <div class="box" title="Sikkim">
+                <img src="/main states pic/Sikkim.jpg" alt="" class="box__img">
+                <div style="display: flex;justify-content: space-between; width: 100%;">
+                    <h3>Sikkim</h3>
+                    <button class="box__btn">Visit</button>
+                </div>
+            </div>
+
+
+           
+            </div>
+        </div>
+
+
+
+             
+   
+       
+    </div>
+
+
+   
+
+    
+
+</body>
+
+
+</html>

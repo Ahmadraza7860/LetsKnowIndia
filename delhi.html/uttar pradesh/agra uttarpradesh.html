@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 30rem;
+        }
+
+        h1 {
+
+            font-size: 4rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: ;
+            margin-right: ;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+                     background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+        .maincontainer:nth-child(odd) {
+            background-color: rgb(222, 222, 21);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo"> <img src="/delhi.html/LOGO PIC.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/main states pic/hero9.jpg" alt="">
+        <div class="DAUSA1">
+            <h1>Taj-Mahal</h1>
+        </div>
+    </div>
+    <h3>Agra</h3>
+    <h2>BEUTIFULL LIKE HEAVEN</h2>
+    <P> Agra has been immortalized as the City of the Taj. A world-renowned wonder, Taj Mahal sits pretty on the northern side of this green paradise.
+        side of this green paradise.Shahjahan invited master craftsmen from as far as Italy and Persia to help design his ambitious tribute to love. 
+        The Taj Mahal is phenomenal not in its beauty alone that shines forth, but in the deep planning and design that went into its making, and the 
+        ethereal idea of immortalizing love. Delicate carvings in marble vie with gorgeous pietra dura for attention.Work on this enchanting mausoleum
+        on the bank of Yamuna started in 1631 and it took around 22 years to complete the entire premises with the help of an estimated 20,000 workers.</P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/main states pic/hero2.11.webp" alt="">
+            <div class="jaaneman"></div>
+            <h4>Agra Fort</h4> <br> <br><br>
+            <h5>
+                Within the Fort are a number of exquisite buildings, including Moti Masjid, Diwan-i-Aam,
+                Diwan-i-Khas and Musamman Burj, where Emperor Shah Jahan died in imprisonment. Jahangir’s 
+                Palace, Khaas Mahal and Sheesh Mahal are the other important monuments inside the Fort. 
+                UP Tourism has started a new sound and light show which provides an insight into the history 
+                of the monument, which is a visual delight.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/main states pic/hero2.13.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Ram Bagh</h4> <br> <br><br>
+            <h5>
+                One of the earliest Mughal gardens, it is believed to be laid out by Mughal Emperor Babur,
+                the founder of Mughal dynasti.It is said that Babur was temporarily buried here before being
+                taken to Kabul in Afghanistan.
+
+
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/main states pic/hero2.13.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>chini ka Rauza</h4> <br> <br><br>
+            <h5>
+                The mausoleum of Shahjahan's prime minister and Persian poet Afzal Khan Aalmi known as ‘Maula Shukrullah,
+                Shirazi’ was built in 1635. It exhibits fine use of glazed tiles, originally an exotic Persian art style,
+                which finds itself a home in Agra.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/main states pic/hero20.2.jpeg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Taj Nature Walk</h4> <br> <br><br>
+            <h5>
+                A beautiful natural forest cover is spread over 70 hectares just 500 meters away from the eastern gate of Taj Mahal.
+                Visitors can have an excellent view of the Taj from different mounds in the park. The forest abounds in a variety of
+                flora and fauna.
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/main states pic/hero20.3.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Mahtab Bagh</h4> <br> <br><br>
+            <h5>
+                Mehtab Bagh is located on the left bank of Yamuna opposite Taj Mahal. The garden complex is approximately 300 square
+                meters and is in straight alignment with the Taj Mahal.The excavation has revealed a huge octagonal tank on the south
+                -ern periphery; Baradaris or pavilion on the East and West; a small octagonal tank at the center and a gateway at the
+                Northern wall.
+            </h5>
+        </div>
+
+
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/main states pic/hero20.5.cms" alt="">
+            <div class="jaaneman"></div>
+            <h4>Fatehpur- Sikri</h4> <br> <br><br>
+            <h5>
+                The beautiful marble tomb of Sheikh Salim Chisti attracts thousands of tourists at places like Diwan-I-Aam, Diwan-I-Khas,
+                Buland Darwaza, Panch Mahal, Jodha Bai’s Palace, Pachisi and Birbal Bhavan.The desire for a son led Mughal Emperor Akbar 
+                to many holy men and finally to the renowned Sufi Saint Sheikh Salim Chishti who lived in an isolated cave near Sikri. The 
+                Saint blessed Akbar and soon a son was born to him in 1569.
+
+
+            </h5>
+        </div>
+
+
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/main states pic/hero20.6.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>Dargah-e-Sheikh Salim Chishti</h4> <br> <br><br>
+            <h5>
+                Many people believed that Chishti could do wonders. The Mughal Emperor Akbar-e-Azam went to the shrine of Ashraf Jahangir
+                Semnani, but on his travels he also felt inspired to see Chishti. Akbar came to Chishti's home, deep in the desert, seeking
+                a male heir to his throne. Chishti blessed Akbar, and soon the first of three sons was born to him. He named his first son 
+                Salim (later emperor Jahangir) in honor of Chishti. A daughter of Sheikh Salim Chishti, was the foster mother of Emperor Jahangir.
+                The emperor was deeply attached to his foster mother, as reflected in the Jahangirnama and he was extremely close to her son Qutb-
+                ud-din Khan Koka who was made the governor of Bengal and his descendants are still to be found in Sheikhupur, Badaun.
+            </h5>
+        </div>
+        
+        </div>
+       
+    </div>
+
+</body>
+
+</html>

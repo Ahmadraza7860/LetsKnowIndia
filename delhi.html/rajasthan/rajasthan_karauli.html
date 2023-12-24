@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .navbar1 {
+            height: 4rem;
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .nav-list1 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list1 li {
+            list-style: none;
+            list-style: none;
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list1 li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .nav-list1 li a:hover {
+            color: grey;
+        }
+
+        .rightNav1 {
+            width: 50%;
+            text-align: right;
+            padding: 0px 23px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            outline: none;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.868);
+            background-size: cover;
+            filter: brightness(60%);
+            /* background-blend-mode: darken; */
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .logo1 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo1 img {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 60%;
+        }
+
+        .dp {
+            width: 100%;
+            height: 30rem;
+        }
+
+        h1 {
+
+            font-size: 5rem;
+            text-align: center;
+            text-decoration: underline;
+
+
+        }
+
+        .dp1 {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .DAUSA1 {
+            position: absolute;
+            right: 40%;
+            top: 40%;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 4rem;
+            text-decoration: underline;
+
+        }
+
+        h2 {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: medium;
+
+        }
+
+        .breaker {
+            display: none;
+
+        }
+
+        .maincontainer {
+            margin-left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: ;
+            margin-right: ;
+        }
+
+        .image1 {
+            height: 25rem;
+            width: 38rem;
+        }
+
+        .jaanu {
+            background-color: rgb(207, 241, 241);
+
+            border: whitesmoke solid 5px;
+            position: relative;
+            width: 38rem;
+            height: auto;
+        }
+
+        .jaaneman {
+            position: absolute;
+            margin: 10px;
+
+        }
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(4, 31, 120);
+
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 15px;
+            color: rgb(65, 40, 29);
+        }
+
+        .maincontainer:nth-child(odd) {
+            background-color: rgb(222, 222, 21);
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1 background">
+        <ul class="nav-list1">
+            <div class="logo1"> <img src="img/logo.jpg" alt="logo"> </div>
+            <li><a href="/mainfirstpage.html">Home</a></li>
+            <li><a href="/delhi.html/index.html">Distination</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav1">
+            <input type="search" name="search" id="search" placeholder="Search here...">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <div class="dp1">
+        <img class="dp" src="/delhi.html/rajasthan/karauli/main.jpg" alt="">
+        <div class="DAUSA1">
+            <h1></h1>
+        </div>
+    </div>
+    <h3>KARAULI</h3>
+    <h2>THE LAND OF RED SANDSTONE</h2>
+    <P>The small city of Karauli that has recently caught the attention of tourists is an exquisite home to well
+        decorated havelis, peaceful shrines, picturesque views and imprinted chhatris that dot the entire city. This
+        beauty of a place in Rajasthan shares its borders with the heart of India, Madhya Pradesh and is surrounded by
+        Dausa, Dholpur and sawai Madhopur in Rajasthan. This city resonates with Mughal architectural panache and is
+        world renowned for its pale red sandstone that surrounds the entire city with strong and sturdy wall. Apart from
+        its royal history, Karauli offers its visitors a rural and tranquil ambience with warm and hospitable behaviour,
+        echoing the true old Rajasthani culture</P>
+
+    <div class="maincontainer">
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/karauli/KAILA DEVI TEMPLE.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>KAILA DEVI TEMPLE</h4> <br> <br><br>
+            <h5>
+                Situated on the outskirts of Karauli, at a distance of about 25 km from the city is the temple of Kaila
+                Devi. This beautiful shrine is right on the banks of Kalisal River in the ranging hills of Trikut. It is
+                believed that the temple was built in 1100 AD and is also considered as one of the nine Shakti Peethas
+                of the deity here. The Kaila Devi Temple hosts an annual fair that lasts a fortnight and attracts
+                millions of pilgrims every year.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/karauli/Madan-Mohan-Temple.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>MADAN MOHAN JI TEMPLE</h4> <br> <br><br>
+            <h5>
+                Located 33 kms from Dausa adjacent to the Chand Baori is a temple dedicated to Harshat Mata – the
+                Madan Mohan, another name for Lord Krishna is a very well celebrated temple in Karauli. The erstwhile
+                kings of the region considered it to be very lucky and is known to have blessed many warriors with
+                victories in the battlefield. One can see intricately carved idols of Lord Krishna and his consort Radha
+                there. The ambience is ancient and the architecture reflects the medieval age using the Karauli stone.
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/karauli/MEHANDIPURBALAJI TEMPLE.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>MEHANDIPURBALAJI TEMPLE</h4> <br> <br><br>
+            <h5>
+                The MehandipurBalaji Temple is world renowned temple dedicated to Monkey God, Lord Hanuman. The temple
+                is located in a small village of Karauli called Mehandipur and is highly reputed for ritualistic healing
+                and exorcism of evil spirits and ghosts. These unnatural happenings at the temple is one of the most
+                important reasons behind the immense amount of footfall that this shrine witnesses.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/karauli/mahaveerji-temple-and.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>SHRI MAHAVIR JI TEMPLE</h4> <br> <br><br>
+            <h5>
+                Shri Mahavir Ji Temple, as the name suggests is a spectacular architectural structure dedicated to the
+                Jain tirthankars. It is one of the most visited and famous pilgrimage destinations for the Jains. The
+                sculpture, design and structure of this building is highly inspired by Jain art. Built in the nineteenth
+                century, this Jain temple hosts an annual fair from the thirteenth day of the bright half of the month
+                of Chaitra to the first day of the dark half of the month of Vaishakh (Mahaveer Jayanti)
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/karauli/GOMTIDHAM.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>GOMTIDHAM</h4> <br> <br><br>
+            <h5>
+                GomtiDham is famous for the ashram of SantGomti Das ji, facing SagarTalab and Timangarh fort amidst
+                dense forest. This arena of peace and tranquillity is a much needed getaway from your daily grind.
+            </h5>
+        </div>
+        <div class="jaanu"> <img class="image1" src="/delhi.html/rajasthan/karauli/BHANWAR VILAS PALACE.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>BHANWAR VILAS PALACE</h4> <br> <br><br>
+            <h5>
+                Originally built as the royal residence by Maharaja Ganesh Pal DeoBahadur in the year 1938, Bhanwar
+                Vilas Palace is now partially turned into a heritage hotel for guests to stay and be a part of a special
+                royal experience. The structure flaunts a colonial style of architecture and the spacious interiors are
+                furnished with antique furniture.
+            </h5>
+        </div>
+        <p class="breaker"></p>
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/karauli/kailadevi-sanctuary-28.webp" alt="">
+            <div class="jaaneman"></div>
+            <h4>KAILA DEVI SANCTUARY</h4> <br> <br><br>
+            <h5>
+                Covered in rich and dense forests, the Kaila Devi Sanctuary begins right after the Kaila Devi Temple and
+                extends on both the sides of the road to eventually join the Ranthambore National Park. This green
+                reserve is home to some great natural treasures like the chinkaras, nilgai, jackals and leaopards. Along
+                with the wide variety of wildlife, one can also spot rare birds like sandpipers and kingfishers.
+            </h5>
+        </div>
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/karauli/city_palace.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>CITY PALACE</h4> <br> <br><br>
+            <h5>
+                Built in the fourteenth century, the monumental City Palace was originally built by Arjun Pal. The
+                structure that one can see now is erected by Raja Gopal Singh in the eighteenth century. This antique
+                building is treasure house of colonial architecture, stone carvings, lattice work windows and
+                magnificent royal style of framework and frescoes. One can notice a hoard of colours in this beautiful
+                palace. Shades of red, white and off-whites are the most common amongst all. However, what tops it all
+                is the view from the terrace from where one can see the entire town laid out by the River Bhadrawati.
+            </h5>
+        </div>
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/karauli/CHHATRI OF RAJA GOPAL SINGH.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>CHHATRI OF RAJA GOPAL SINGH</h4> <br> <br><br>
+            <h5>
+                The Chattri of Raja Gopal Singh, outside the Nadi Gate leading out of the palace to the river is
+                beautifully adorned with fresco paintings. The reformer and founder of the Arya Samaj, DayanandSaraswati
+                is also known to have delivered a talk at the Chhatri of Raja Gopal Singh. Many devotees from
+                neighbouring states like Madhya Pradesh, across the Chambal River visit the chhatri topay homage. </h5>
+        </div>
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/karauli/TIMANGARH FORT.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>TIMANGARH FORT</h4> <br> <br><br>
+            <h5>
+                The great Timangarh Fort, built in 1100 AD is named after the King Timanpal and is situated at a
+                distance of 40 km from Karauli. This magnificent structure was destroyed in one of the many attacks and
+                was rebuilt by King Timanpal of Banaya in 1058 AD. A unique feature of this structure is its priceless
+                collection of ancient ashtadathu (eight metals). None the less, the architecture of this fort bares a
+                unique sign of India’s ancient yet royal history. Many mythological gods and goddesses are also indebted
+                on the stone pillars supporting the fort.The fort witnessed many upheavals in its glorious history until
+                Akbar gifted it back to his mansabdar. </h5>
+        </div>
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/karauli/DEV GIRI FORT & UTGIR.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>DEV GIRI FORT & UTGIR</h4> <br> <br><br>
+            <h5>
+                Utgir, built by the Lodha warriors is situated on a triangular peak of Aravallis while the Devgiri Fort
+                is in the ravines of Chmabal River between Karanpur and Khandar. It is believed that Raja Arjun Deo
+                acquired the Utgir Fort and it remained the capital of Yaduvanshis until Gopal Das built the
+                BahadurpurFort. This was used as emergency garrison fort by Karauli dynasty, till the states merged to
+                form Rajasthan. </h5>
+        </div>
+
+
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/karauli/MANDRAYAL.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>MANDRAYAL</h4> <br> <br><br>
+            <h5>
+                Situated 40 kms from the main district, Mandrayal is a significant town of Karaulithat joinsRajasthan
+                and Madhya Pradesh. Raja Arjun Dev captured this fort from Muslim Kiledar Miya Makan in 1327 AD.
+                However, Maharaja Harbaksh Pal built another garrison fort here that was known as BalaKila. </h5>
+        </div>
+
+
+        <div class="jaanu"><img class="image1" src="/delhi.html/rajasthan/karauli/GADHMORA.jpg" alt="">
+            <div class="jaaneman"></div>
+            <h4>GADHMORA</h4> <br> <br><br>
+            <h5>
+                Gadhmora is counted amongst one of the most ancient villages of Rajasthan and is believed to have been
+                in existence since Lord Krishna’s era. This place got its name from its ruler - Raja MorDhwaj. Gadhmora
+                is also home to a famous Kund where an annual fare is held during Sankranti every year. </h5>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footing1">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-black text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="https://www.instagram.com/ahmadraza93845/" class="text-reset">Instagram</a>
+                            </p>
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/India" class="text-reset">Know All About India
+                                </a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="/mainfirstpage.html" class="text-reset">GO TO <BR>HOME </BR></a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3 text-secondary"></i> INDIA, BIHAR , 843324</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-secondary"></i>7254926619</p>
+                            <p><i class="fas fa-print me-3 text-secondary"></i>6202902789</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>
